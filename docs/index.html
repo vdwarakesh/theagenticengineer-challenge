@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Agentic Dating - Compatibility Check</title>
+</head>
+<body>
+
+  <h1>Agentic Dating</h1>
+  <p>Paste the LinkedIn and Instagram links for two people. Each gets an AI agent built from
+     their public profiles, the two agents go on a date, then you see the result.</p>
+
+  <!-- CHANGE THIS to your deployed Render backend URL -->
+  <script>const BACKEND_URL = "https://YOUR-BACKEND.onrender.com";</script>
+
+  <form id="compatForm">
+    <h3>Person A</h3>
+    <label>LinkedIn: <input type="text" id="linkedinA" size="50" required></label><br><br>
+    <label>Instagram: <input type="text" id="instagramA" size="50" required></label><br><br>
+
+    <h3>Person B</h3>
+    <label>LinkedIn: <input type="text" id="linkedinB" size="50" required></label><br><br>
+    <label>Instagram: <input type="text" id="instagramB" size="50" required></label><br><br>
+
+    <button type="submit">Check compatibility</button>
+  </form>
+
+  <p id="status"></p>
+
+  <div id="profilesSection" style="display:none;">
+    <h2>Profile A</h2>
+    <pre id="profileAOutput"></pre>
+
+    <h2>Profile B</h2>
+    <pre id="profileBOutput"></pre>
+  </div>
+
+  <div id="dateSection" style="display:none;">
+    <h2>The date</h2>
+    <div id="transcriptOutput"></div>
+  </div>
+
+  <div id="resultSection" style="display:none;">
+    <h2>Compatibility result</h2>
+    <pre id="resultOutput"></pre>
+  </div>
+
+  <script>
+    const statusEl = document.getElementById("status");
+    const form = document.getElementById("compatForm");
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      statusEl.textContent = "Submitting...";
+      document.getElementById("profilesSection").style.display = "none";
+      document.getElementById("dateSection").style.display = "none";
+      document.getElementById("resultSection").style.display = "none";
+
+      const body = {
+        linkedin_url_a: document.getElementById("linkedinA").value,
+        instagram_url_a: document.getElementById("instagramA").value,
+        linkedin_url_b: document.getElementById("linkedinB").value,
+        instagram_url_b: document.getElementById("instagramB").value,
+      };
+
+      const res = await fetch(`${BACKEND_URL}/api/compatibility`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+
+      if (!res.ok) {
+        statusEl.textContent = "Error submitting. Check the URLs are valid.";
+        return;
+      }
+
+      const { job_id } = await res.json();
+      pollJob(job_id);
+    });
+
+    async function pollJob(jobId) {
+      const interval = setInterval(async () => {
+        const res = await fetch(`${BACKEND_URL}/api/jobs/${jobId}`);
+        const job = await res.json();
+
+        if (job.status === "scraping") statusEl.textContent = "Scraping both people's LinkedIn + Instagram...";
+        if (job.status === "analyzing") statusEl.textContent = "Analyzing both profiles...";
+        if (job.status === "dating") {
+          statusEl.textContent = "Profiles ready. Running the date...";
+          if (job.profile_a && job.profile_b) showProfiles(job.profile_a, job.profile_b);
+        }
+
+        if (job.status === "done") {
+          clearInterval(interval);
+          statusEl.textContent = "Done!";
+          showProfiles(job.profile_a, job.profile_b);
+          showDate(job.result);
+        }
+
+        if (job.status === "error") {
+          clearInterval(interval);
+          statusEl.textContent = "Error: " + job.error;
+        }
+      }, 2000);
+    }
+
+    function showProfiles(a, b) {
+      document.getElementById("profilesSection").style.display = "block";
+      document.getElementById("profileAOutput").textContent = JSON.stringify(a, null, 2);
+      document.getElementById("profileBOutput").textContent = JSON.stringify(b, null, 2);
+    }
+
+    function showDate(result) {
+      document.getElementById("dateSection").style.display = "block";
+      const container = document.getElementById("transcriptOutput");
+      container.innerHTML = "";
+      result.transcript.forEach(line => {
+        const p = document.createElement("p");
+        p.textContent = `${line.speaker}: ${line.text}`;
+        container.appendChild(p);
+      });
+
+      document.getElementById("resultSection").style.display = "block";
+      document.getElementById("resultOutput").textContent = JSON.stringify({
+        final_score: result.final_score,
+        same_city: result.same_city,
+        verdict_a_about_b: result.verdict_a_about_b,
+        verdict_b_about_a: result.verdict_b_about_a,
+      }, null, 2);
+    }
+  </script>
+
+</body>
+</html>

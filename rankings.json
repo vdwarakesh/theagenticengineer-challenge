@@ -1,0 +1,16 @@
+{
+  "Bill Gates": [
+    {
+      "match": "Richard Branson",
+      "score": 85.0,
+      "reason": "Bill sees Richard as a high-value collaborator who shares his core values of equity and global responsibility. The potential for a joint venture in tech-enabled care (like Alzheimer's support) is highly appealing to Bill's mission-driven personality, outweighing the slight difference in adventure versus structured philanthropy."
+    }
+  ],
+  "Richard Branson": [
+    {
+      "match": "Bill Gates",
+      "score": 85.0,
+      "reason": "Richard is drawn to Bill's intellect and the potential for a bold, innovative partnership. While Bill's approach is more formal, Richard respects the ambition and sees a clear path to combining their strengths for a significant social impact, which aligns with his values."
+    }
+  ]
+}

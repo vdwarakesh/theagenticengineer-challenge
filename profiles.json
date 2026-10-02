@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Bill Gates",
+    "summary": "Bill Gates is a philanthropist and entrepreneur currently focused on leveraging AI for global development and health equity. His public presence highlights a commitment to ensuring technology benefits marginalized communities and supports global goals.",
+    "hobbies": [
+      "reading",
+      "traveling",
+      "blogging"
+    ],
+    "interests": [
+      "Artificial Intelligence",
+      "Global Health",
+      "Multilingual AI Access",
+      "Alzheimer's Care",
+      "UN Goalkeepers 2030"
+    ],
+    "career_focus": "Co-chair of the Gates Foundation and Founder of Breakthrough Energy.",
+    "values": [
+      "Equity",
+      "Human-centric Technology",
+      "Global Responsibility",
+      "Inclusivity"
+    ],
+    "needs": [
+      "A partner who values social impact and global citizenship",
+      "Intellectual engagement on technology and ethics",
+      "Support for a high-profile, travel-heavy lifestyle"
+    ],
+    "personality_traits": [
+      "Visionary",
+      "Advocate",
+      "Intellectual",
+      "Mission-driven"
+    ],
+    "evidence": [
+      {
+        "claim": "Enjoys reading, traveling, and blogging",
+        "source": "linkedin",
+        "detail": "About section lists 'Voracious reader. Avid traveler. Active blogger.'"
+      },
+      {
+        "claim": "Focuses on AI ethics and global health",
+        "source": "instagram",
+        "detail": "Captions discuss AI tools for farmers, teachers, and health workers, and the need for non-English AI tools."
+      },
+      {
+        "claim": "Values human-centric technology",
+        "source": "instagram",
+        "detail": "Caption states 'people and relationships must remain at the center of how we use AI'."
+      },
+      {
+        "claim": "Engaged in philanthropy and global goals",
+        "source": "instagram",
+        "detail": "Posts reference #Goalkeepers2030, UN General Assembly, and a $1 billion commitment to AI access."
+      },
+      {
+        "claim": "Works in philanthropy and energy",
+        "source": "linkedin",
+        "detail": "Headline is 'Chair, Gates Foundation and Founder, Breakthrough Energy'."
+      },
+      {
+        "claim": "Interested in Alzheimer's care",
+        "source": "instagram",
+        "detail": "Caption mentions Seth Rogen and Lauren Miller Rogen's work with Hilarity for Charity regarding Alzheimer's."
+      }
+    ]
+  },
+  {
+    "name": "Richard Branson",
+    "summary": "Richard Branson is a prominent entrepreneur and technology leader who balances his role as CTO of Action Cam Limited with a high-profile public persona focused on adventure, sustainability, and business innovation. His digital presence highlights a blend of corporate leadership, personal philanthropy, and a 'head of yes' lifestyle philosophy.",
+    "hobbies": [
+      "hot air ballooning",
+      "skiing",
+      "traveling to remote locations"
+    ],
+    "interests": [
+      "IoT and AI innovation",
+      "climate change and planetary health",
+      "philanthropy and education",
+      "experiential technology",
+      "advertising and business strategy"
+    ],
+    "career_focus": "Technical Director / CTO | IoT & AI Innovator | Building Connected Systems for Sport, Fitness & Experiential Technology",
+    "values": [
+      "family",
+      "adventure and spontaneity",
+      "environmental stewardship",
+      "innovation",
+      "philanthropy"
+    ],
+    "needs": [
+      "a partner who supports a life of adventure and travel",
+      "a partner who values philanthropy and social impact",
+      "a partner who appreciates entrepreneurial ambition"
+    ],
+    "personality_traits": [
+      "adventurous",
+      "optimistic",
+      "innovative",
+      "compassionate",
+      "bold"
+    ],
+    "evidence": [
+      {
+        "claim": "loves hot air ballooning",
+        "source": "instagram",
+        "detail": "Caption mentions 'Thinking back on my hot air ballooning days'"
+      },
+      {
+        "claim": "enjoys skiing and high-altitude travel",
+        "source": "instagram",
+        "detail": "Caption describes 'ski-in living at @thelodgeverbier_' and '3,000 metres in the high Alps'"
+      },
+      {
+        "claim": "values family",
+        "source": "instagram",
+        "detail": "Caption states 'So touching to see @VirginAtlantic\u2019s new plane paying tribute to my wonderful wife, Joan.'"
+      },
+      {
+        "claim": "values environmental stewardship",
+        "source": "instagram",
+        "detail": "Caption mentions joining 'Planetary Guardians' to launch a report during Climate Week"
+      },
+      {
+        "claim": "is an IoT and AI innovator",
+        "source": "linkedin",
+        "detail": "Headline: 'Technical Director / CTO | IoT & AI Innovator'"
+      },
+      {
+        "claim": "values philanthropy and education",
+        "source": "instagram",
+        "detail": "Caption mentions 'Meeting the most wonderful students at a school we helped set up in Kenya. @MahaliMzuri'"
+      },
+      {
+        "claim": "has an adventurous and spontaneous personality",
+        "source": "instagram",
+        "detail": "Bio: 'Screw it, let\u2019s do it.' and caption: 'The best things in my life began before I knew what I was doing.'"
+      },
+      {
+        "claim": "interested in experiential technology",
+        "source": "linkedin",
+        "detail": "About section mentions 'design and deliver IoT platforms... and engaging digital experiences' and followed topic 'Experiential Insider'"
+      }
+    ]
+  }
+]

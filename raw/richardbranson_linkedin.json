@@ -1,0 +1,1400 @@
+[
+  {
+    "id": "ACoAAADJc1MBlibkzDbd_MWLv0bOY3cRIev_77A",
+    "publicIdentifier": "richardbranson",
+    "linkedinUrl": "https://www.linkedin.com/in/richardbranson",
+    "firstName": "Richard",
+    "lastName": "Branson",
+    "emails": [],
+    "headline": "Technical Director / CTO | IoT & AI Innovator | Building Connected Systems for Sport, Fitness & Experiential Technology",
+    "openToWork": false,
+    "hiring": false,
+    "premium": true,
+    "influencer": false,
+    "memorialized": false,
+    "creator": false,
+    "location": {
+      "linkedinText": "Royal Tunbridge Wells, England, United Kingdom",
+      "countryCode": "GB",
+      "parsed": {
+        "text": "Royal Tunbridge Wells, United Kingdom",
+        "countryCode": "GB",
+        "regionCode": null,
+        "country": "UK",
+        "countryFull": "United Kingdom",
+        "state": "England",
+        "city": "Royal Tunbridge Wells"
+      }
+    },
+    "objectUrn": "13202259",
+    "registeredAt": "2007-06-26T04:06:24.000Z",
+    "topSkills": [
+      "IoT Systems Architecture",
+      "Cloud Infrastructure (AWS & Azure)",
+      "AI / Machine Learning Integration",
+      "Data Analytics & Power BI",
+      "Leadership & Technology Strategy"
+    ],
+    "connectionsCount": 1101,
+    "followerCount": 1455,
+    "verified": true,
+    "about": "I\u2019m a technology leader and builder with a passion for creating connected systems that transform how people interact with sport, fitness, and entertainment. Over the past decade, I\u2019ve combined hands-on engineering with strategic direction to design and deliver IoT platforms, real-time data pipelines, and engaging digital experiences.\n\nAt ActionCam.Video, I\u2019ve led the full technology journey\u2014from establishing secure cloud infrastructure and IT operations, to architecting next-generation IoT ecosystems and customer-facing applications used in gyms, sports venues, and experiential spaces across the UK and US.\n\n\ud83d\udd39 Tech Vision & Delivery (2023\u2013Present): Now as Technical Director / CTO, I drive the technology roadmap, architecting IoT ecosystems that connect hardware (Raspberry Pi, Arduino, sensors, cameras) with real-time cloud data pipelines, analytics, and interactive user experiences. My work spans firmware, Python/C++ development, edge computing, and AI/ML, through to QR-driven scoreboards and predictive performance platforms.\n\n\ud83d\udd39 Ops & Infrastructure (2020\u20132023): As Operations Director, I built the backbone of ActionCam\u2019s systems\u2014designing IT networks, deploying secure cloud environments (AWS & Azure), managing multi-domain web platforms, and delivering on-site installations.\n\nWhat excites me most is connecting the dots:\n\t\u2022\tTurning sensor data into actionable insights with real-time analytics and AI\n\t\u2022\tDesigning scalable, secure IoT ecosystems blending edge and cloud computing\n\t\u2022\tCreating automation tools, and interactive dashboards that reimagine engagement\n\t\u2022\tLeading multidisciplinary teams to turn complex ideas into reliable, commercial-ready products\n\nBefore ActionCam, I built a strong foundation in digital and experiential marketing. As Head of Digital at Wasserman X, I led all digital output for global clients including NBA, Sky, HP, and Taylors of Harrogate. Earlier agency roles at SPPLUS, Sense, and Candour gave me deep experience in operations, production, and events management, delivering campaigns for brands such as Cadbury, Canon, Sky, and Timberland.\n\nI also hold a BSc in Sports Science from UCLan and continue to expand my knowledge through courses in computer programming, design, and emerging tech.\n\n\ud83d\udca1 I thrive at the intersection of innovation and delivery\u2014bridging strategy with hands-on engineering, and bringing emerging technologies like AI, and edge computing into practical, real-world solutions.\n\nAlways open to connecting with fellow innovators, technologists, and creatives.",
+    "currentPosition": [
+      {
+        "position": "Technical Director / CTO",
+        "location": "London Area, United Kingdom",
+        "employmentType": "Full-time",
+        "workplaceType": "Remote",
+        "companyName": "Action Cam Limited",
+        "companyUniversalName": null,
+        "companyLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=Action+Cam+Limited",
+        "companyId": null,
+        "duration": "3 yrs 8 mos",
+        "description": "As Technical Director / CTO, I lead the vision, architecture, and delivery of ActionCam.Video\u2019s next-generation sports and fitness technology. My role combines hands-on engineering with strategic leadership, architecting IoT ecosystems that connect hardware, cloud, and digital experiences at scale.\n\nKey Responsibilities & Achievements\n\t\u2022\tTechnology Strategy: Defined and executed the company\u2019s technology roadmap, driving innovation in FEC Gamification, automated sports scoring, rep counting, and real-time video highlight platforms.\n\t\u2022\tIoT & Systems Architecture: Built multi-device ecosystems integrating Raspberry Pi, Arduino, and advanced sensors (TOF, accelerometers, FSR) with Azure cloud pipelines and WebSocket-enabled dashboards.\n\t\u2022\tSoftware & Data: Developed software from firmware to full-stack platforms, implementing real-time data ingestion, analytics, and leaderboards; exploring AI & Object detection for in camera triggering systems.\n\t\u2022\tLive Digital Models: Created real-time digital representations of athlete performance and in-venue activity, enabling coaches, athletes, and operators to monitor progress, analyse performance, and enhance engagement.\n\t\u2022\tUser Experience: Delivered interactive customer-facing systems such as QR-driven live scoreboards, mobile-accessible counters, and gamified training tools.\n\t\u2022\tLeadership & Delivery: Built and coordinated a cross-disciplinary team, translating customer needs into scalable, commercial-ready solutions.\n\nCore Skills & Tools: Python, JavaScript/Node.js, C++, OpenCV, GStreamer, FFmpeg, WebSockets, Azure (Blob, Functions, IoT Hub), MQTT, REST APIs, SQL/NoSQL databases, IoT hardware (Raspberry Pi, Arduino, camera pipelines, sensors).",
+        "skills": null,
+        "experienceGroupId": "efdaa5617b167d01a4f3fc285c6064c4f98b6d1e",
+        "startDate": {
+          "month": "Mar",
+          "year": 2023,
+          "text": "Mar 2023"
+        },
+        "endDate": {
+          "text": "Present"
+        },
+        "companyLogo": null
+      }
+    ],
+    "profileTopEducation": [
+      {
+        "schoolName": "University of Central Lancashire",
+        "description": null,
+        "insights": "Activities and societies: Sports Council (Treasurer), Snowboard Team (Chairman), Taekwondo Team, Badminton Squad",
+        "skills": null,
+        "schoolLinkedinUrl": "https://www.linkedin.com/company/20729/",
+        "schoolId": "20729",
+        "degree": "Bachelor of Science (BSc)",
+        "fieldOfStudy": "Sports Science, Physiology, Bio Mechanics, Nutrition and Psychology",
+        "period": "1999 - 2002",
+        "startDate": {
+          "text": "1999",
+          "year": 1999
+        },
+        "endDate": {
+          "text": "2002",
+          "year": 2002
+        },
+        "schoolLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_400_400/company-logo_400_400/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=2_cRtJp3ynmEGr3fTXAfwNDZtaLrWOgAS9EXlEAQLZk",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_400_400/company-logo_400_400/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=2_cRtJp3ynmEGr3fTXAfwNDZtaLrWOgAS9EXlEAQLZk",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_200_200/company-logo_200_200/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=icLwHJpSIfJgsIqyXxcoIlandNTbeJTT4L1HOawSzpI",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_100_100/company-logo_100_100/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=iL_IJKF1kRT7ahn5ChgOptt4Uv_gY1Fz1nk9dC5euiY",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      }
+    ],
+    "profileActions": [],
+    "profilePicture": {
+      "url": "https://media.licdn.com/dms/image/v2/D4E03AQGPhk5-kyzcBQ/profile-displayphoto-crop_800_800/B4EZrT.W.2GYAI-/0/1764492931636?e=1792627200&v=beta&t=qymorQTnzXKAVXN5EsuB1cYIxkJ3FwA9TtlM6ARjTwg",
+      "sizes": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQGPhk5-kyzcBQ/profile-displayphoto-crop_800_800/B4EZrT.W.2GYAI-/0/1764492931636?e=1792627200&v=beta&t=qymorQTnzXKAVXN5EsuB1cYIxkJ3FwA9TtlM6ARjTwg",
+          "width": 800,
+          "height": 800
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQGPhk5-kyzcBQ/profile-displayphoto-scale_400_400/B4EZrT.W.2GYAg-/0/1764492931722?e=1792627200&v=beta&t=7klbQ_EJN1YfWRq82Hd_g5ddAcoxEmmd2kc-l8uWKmo",
+          "width": 400,
+          "height": 400
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQGPhk5-kyzcBQ/profile-displayphoto-scale_200_200/B4EZrT.W.2GYAY-/0/1764492931722?e=1792627200&v=beta&t=xWDeurz9xeOKEqkNCIw9ubW_2aEIcejzDbpZkdNjJOk",
+          "width": 200,
+          "height": 200
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4E03AQGPhk5-kyzcBQ/profile-displayphoto-scale_100_100/B4EZrT.W.2GYAc-/0/1764492931722?e=1792627200&v=beta&t=HgaindnxkjQqvglFuARdoq94BA7rSdLDzewgM6W0Vsk",
+          "width": 100,
+          "height": 100
+        }
+      ]
+    },
+    "coverPicture": {
+      "url": "https://media.licdn.com/dms/image/v2/C4E16AQGseeBWFfsf-A/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1517690218919?e=1792627200&v=beta&t=S__H3HVBwIiizWsnTp9zQMfGp9VU312XXNsFxMDqXNU",
+      "sizes": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/C4E16AQGseeBWFfsf-A/profile-displaybackgroundimage-shrink_350_1400/profile-displaybackgroundimage-shrink_350_1400/0/1517690218919?e=1792627200&v=beta&t=S__H3HVBwIiizWsnTp9zQMfGp9VU312XXNsFxMDqXNU",
+          "width": 1000,
+          "height": 250
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/C4E16AQGseeBWFfsf-A/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1517690218774?e=1792627200&v=beta&t=9sd7l6H9a_U6j4ad1MkCSqhptyHgPfkQEt1WI5_XK1M",
+          "width": 800,
+          "height": 200
+        }
+      ]
+    },
+    "photo": "https://media.licdn.com/dms/image/v2/D4E03AQGPhk5-kyzcBQ/profile-displayphoto-crop_800_800/B4EZrT.W.2GYAI-/0/1764492931636?e=1792627200&v=beta&t=qymorQTnzXKAVXN5EsuB1cYIxkJ3FwA9TtlM6ARjTwg",
+    "profileLocales": [
+      {
+        "country": "US",
+        "language": "en"
+      }
+    ],
+    "primaryLocale": {
+      "country": "US",
+      "language": "en"
+    },
+    "multiLocaleHeadline": [
+      {
+        "headline": "Technical Director / CTO | IoT & AI Innovator | Building Connected Systems for Sport, Fitness & Experiential Technology",
+        "locale": "en_US"
+      }
+    ],
+    "services": null,
+    "experience": [
+      {
+        "position": "Technical Director / CTO",
+        "location": "London Area, United Kingdom",
+        "employmentType": "Full-time",
+        "workplaceType": "Remote",
+        "companyName": "Action Cam Limited",
+        "companyUniversalName": null,
+        "companyLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=Action+Cam+Limited",
+        "companyId": null,
+        "duration": "3 yrs 8 mos",
+        "description": "As Technical Director / CTO, I lead the vision, architecture, and delivery of ActionCam.Video\u2019s next-generation sports and fitness technology. My role combines hands-on engineering with strategic leadership, architecting IoT ecosystems that connect hardware, cloud, and digital experiences at scale.\n\nKey Responsibilities & Achievements\n\t\u2022\tTechnology Strategy: Defined and executed the company\u2019s technology roadmap, driving innovation in FEC Gamification, automated sports scoring, rep counting, and real-time video highlight platforms.\n\t\u2022\tIoT & Systems Architecture: Built multi-device ecosystems integrating Raspberry Pi, Arduino, and advanced sensors (TOF, accelerometers, FSR) with Azure cloud pipelines and WebSocket-enabled dashboards.\n\t\u2022\tSoftware & Data: Developed software from firmware to full-stack platforms, implementing real-time data ingestion, analytics, and leaderboards; exploring AI & Object detection for in camera triggering systems.\n\t\u2022\tLive Digital Models: Created real-time digital representations of athlete performance and in-venue activity, enabling coaches, athletes, and operators to monitor progress, analyse performance, and enhance engagement.\n\t\u2022\tUser Experience: Delivered interactive customer-facing systems such as QR-driven live scoreboards, mobile-accessible counters, and gamified training tools.\n\t\u2022\tLeadership & Delivery: Built and coordinated a cross-disciplinary team, translating customer needs into scalable, commercial-ready solutions.\n\nCore Skills & Tools: Python, JavaScript/Node.js, C++, OpenCV, GStreamer, FFmpeg, WebSockets, Azure (Blob, Functions, IoT Hub), MQTT, REST APIs, SQL/NoSQL databases, IoT hardware (Raspberry Pi, Arduino, camera pipelines, sensors).",
+        "skills": null,
+        "experienceGroupId": "efdaa5617b167d01a4f3fc285c6064c4f98b6d1e",
+        "startDate": {
+          "month": "Mar",
+          "year": 2023,
+          "text": "Mar 2023"
+        },
+        "endDate": {
+          "text": "Present"
+        },
+        "companyLogo": null
+      },
+      {
+        "position": "Operations Director",
+        "location": "London Area, United Kingdom",
+        "employmentType": "Full-time",
+        "workplaceType": "Remote",
+        "companyName": "Action Cam Limited",
+        "companyUniversalName": null,
+        "companyLinkedinUrl": "https://www.linkedin.com/search/results/all/?keywords=Action+Cam+Limited",
+        "companyId": null,
+        "duration": "3 yrs 3 mos",
+        "description": "As Operations Director, I established the foundations of ActionCam.Video\u2019s technology and infrastructure, ensuring the company was built on secure, scalable, and reliable systems. I was responsible for the full lifecycle of IT operations, from planning and design through to deployment and long-term management.\n\nKey Responsibilities & Achievements\n\t\u2022\tInfrastructure & Networking: Designed and deployed IT networks and server infrastructure to support real-time video processing, IoT devices, and cloud-based services.\n\t\u2022\tCloud & Web Systems: Built and managed the company\u2019s full web presence, overseeing multiple domains and websites hosted across AWS and Azure, ensuring high availability, performance, and security.\n\t\u2022\tSystems Integration: Standardised deployment processes, introduced monitoring and automation, and created secure environments to connect hardware, software, and cloud services seamlessly.\n\t\u2022\tOperations Leadership: Coordinated logistics for installation and support across client venues in the UK and US, managing projects from concept to on-site delivery.\n\t\u2022\tCybersecurity & Compliance: Implemented secure networking, data protection measures, and best practices for GDPR compliance.\n\t\u2022\tVendor & Partner Management: Negotiated with suppliers and partners for hardware, hosting, and connectivity services to optimise cost and performance.\n\nCore Skills & Tools: AWS, Azure, Linux server administration, DNS/domain management, web hosting, networking protocols (TCP/IP, HTTP, MQTT), VPNs, firewall management, IT security, project management.",
+        "skills": null,
+        "experienceGroupId": "efdaa5617b167d01a4f3fc285c6064c4f98b6d1e",
+        "startDate": {
+          "month": "Jan",
+          "year": 2020,
+          "text": "Jan 2020"
+        },
+        "endDate": {
+          "month": "Mar",
+          "year": 2023,
+          "text": "Mar 2023"
+        },
+        "companyLogo": null
+      },
+      {
+        "position": "Co-Founder & Head of Digital",
+        "location": null,
+        "employmentType": "Part-time",
+        "workplaceType": null,
+        "companyName": "Wellbeing Magazine",
+        "companyUniversalName": "wellbeing-magazine",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/wellbeing-magazine/",
+        "companyId": "407509",
+        "duration": "20 yrs 2 mos",
+        "description": null,
+        "skills": null,
+        "startDate": {
+          "month": "Sep",
+          "year": 2006,
+          "text": "Sep 2006"
+        },
+        "endDate": {
+          "text": "Present"
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/D4E0BAQHT8AXi0p5MHw/company-logo_400_400/company-logo_400_400/0/1736069357541/wellbeing_magazine_logo?e=1792627200&v=beta&t=o-5s1-R5FfzEc5DY2yqRUAA_sSPFo5XnQiZHIt8GQ1Q",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQHT8AXi0p5MHw/company-logo_400_400/company-logo_400_400/0/1736069357541/wellbeing_magazine_logo?e=1792627200&v=beta&t=o-5s1-R5FfzEc5DY2yqRUAA_sSPFo5XnQiZHIt8GQ1Q",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQHT8AXi0p5MHw/company-logo_200_200/company-logo_200_200/0/1736069357541/wellbeing_magazine_logo?e=1792627200&v=beta&t=_82kYqiZWi3oiHizrkxXHZqtoOvuYUE4mghuxnlbQto",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQHT8AXi0p5MHw/company-logo_100_100/company-logo_100_100/0/1736069357541/wellbeing_magazine_logo?e=1792627200&v=beta&t=v4GMDrsq0FZiwWRy2Ha_L2nz_DFLYlpZnPd1IihyLZg",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "position": "Digital Marketing Consultant",
+        "location": "London Area, United Kingdom",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "diabolo.digital",
+        "companyUniversalName": "diabolo-digital",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/diabolo-digital/",
+        "companyId": "19115169",
+        "duration": "1 yr 4 mos",
+        "description": "Web design / development / management / hosting / marketing and more... We offer a full digital agency service at freelance rates.",
+        "skills": null,
+        "startDate": {
+          "month": "Oct",
+          "year": 2018,
+          "text": "Oct 2018"
+        },
+        "endDate": {
+          "month": "Jan",
+          "year": 2020,
+          "text": "Jan 2020"
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/C560BAQEfcomQsogqrg/company-logo_400_400/company-logo_400_400/0/1630569334769?e=1792627200&v=beta&t=vwdjq3jM6-DM55yYqgcZDn160lTMwfKZIParl9E_lJE",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C560BAQEfcomQsogqrg/company-logo_400_400/company-logo_400_400/0/1630569334769?e=1792627200&v=beta&t=vwdjq3jM6-DM55yYqgcZDn160lTMwfKZIParl9E_lJE",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C560BAQEfcomQsogqrg/company-logo_200_200/company-logo_200_200/0/1630569334769?e=1792627200&v=beta&t=EYzb5nDARr2oEAzTfmcJ0iZZVdtgRXanX5usX8Hm4PA",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C560BAQEfcomQsogqrg/company-logo_100_100/company-logo_100_100/0/1630569334769?e=1792627200&v=beta&t=8M_k148soNAukYSLy7FhD0XW0y0HlwSjvHwczI5lNow",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "position": "Head Of Digital",
+        "location": "London Area, United Kingdom",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Wasserman X",
+        "companyUniversalName": "the-team-marketing",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/the-team-marketing/",
+        "companyId": "1324294",
+        "duration": "2 yrs",
+        "description": "==== Brand Experience ==== \nIncludes: Sky, HP, Bacardi Group (Martini, Grey Goose, St Germain, William Lawsons, Bombay Sapphire), Nespresso, NFL, NBA, Vodafone, Taylors of Harrogate.",
+        "skills": null,
+        "startDate": {
+          "month": "Nov",
+          "year": 2016,
+          "text": "Nov 2016"
+        },
+        "endDate": {
+          "month": "Oct",
+          "year": 2018,
+          "text": "Oct 2018"
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/D4E0BAQGuhkgY93YZGw/company-logo_400_400/B4EZzUCj._J4Ac-/0/1773083967712/wassermanmarketing_logo?e=1792627200&v=beta&t=PZUCnCT8cLu9XWYsdKyQ2B8PqQENZ5EicLQPjjWHGWw",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQGuhkgY93YZGw/company-logo_400_400/B4EZzUCj._J4Ac-/0/1773083967712/wassermanmarketing_logo?e=1792627200&v=beta&t=PZUCnCT8cLu9XWYsdKyQ2B8PqQENZ5EicLQPjjWHGWw",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQGuhkgY93YZGw/company-logo_200_200/B4EZzUCj._J4AM-/0/1773083967712/wassermanmarketing_logo?e=1792627200&v=beta&t=epltwdQ3DJ_DsgeKiODT9XyvRZsYurtTEq0IO8IIpFA",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQGuhkgY93YZGw/company-logo_100_100/B4EZzUCj._J4AU-/0/1773083967712/wassermanmarketing_logo?e=1792627200&v=beta&t=XfzOyzOcmZ7z32x8tm0QhRno61Y42-PIkwpcYdYulkQ",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "position": "Senior Dev Ops Engineer",
+        "location": "London Area, United Kingdom",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "ALPDEST CEE, s.r.o.",
+        "companyUniversalName": "alpdest-cee",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/alpdest-cee/",
+        "companyId": "10354982",
+        "duration": "2 yrs 6 mos",
+        "description": "Alpdest is the dominant ski media owner across Europe. Fully integrated with the resorts creating innovative tailored 360 degree solutions which passionately engage consumers with brands in partnership with resorts across Europe.\n\nWe are cross media experts tailoring a dynamic blend of Outdoor, placements, brand experience activations and digital content, creating engaging touch-points that drive brand truth centred messaging out across personal networks.\n\n========= Role =========\nDesign and build their ski media database consisting of over 100 resorts and 10,000+ media sites. Our powerful system can create tailored sales presentations at the click of a button to suit a clients exact requirements, ensuring the proposed media gives back maximum ROI.",
+        "skills": null,
+        "startDate": {
+          "month": "Feb",
+          "year": 2015,
+          "text": "Feb 2015"
+        },
+        "endDate": {
+          "month": "Jul",
+          "year": 2017,
+          "text": "Jul 2017"
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/C4E0BAQFV0NP31wcbSw/company-logo_400_400/company-logo_400_400/0/1631311958772?e=1792627200&v=beta&t=2hPIh3W2kYwheNaOrNJZM1nX-b8773ZFD7Pux1i_LVQ",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQFV0NP31wcbSw/company-logo_400_400/company-logo_400_400/0/1631311958772?e=1792627200&v=beta&t=2hPIh3W2kYwheNaOrNJZM1nX-b8773ZFD7Pux1i_LVQ",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQFV0NP31wcbSw/company-logo_200_200/company-logo_200_200/0/1631311958772?e=1792627200&v=beta&t=dyfM6paFMKUudH4V2xD7W_2fi5JOpatd4o9FjbG3FgU",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQFV0NP31wcbSw/company-logo_100_100/company-logo_100_100/0/1631311958772?e=1792627200&v=beta&t=y4YlmZeSfg18hB_tE7m1LZ7aykwKPPGX4fOK5d1ofKo",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "position": "Digital Producer (Freelance)",
+        "location": "Tunbridge Wells",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Yoyo Design Ltd",
+        "companyUniversalName": "yoyo-design-ltd",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/yoyo-design-ltd/",
+        "companyId": "543683",
+        "duration": "4 mos",
+        "description": null,
+        "skills": null,
+        "startDate": {
+          "text": "Jul 2016",
+          "month": "Jul",
+          "year": 2016
+        },
+        "endDate": {
+          "text": "Oct 2016",
+          "month": "Oct",
+          "year": 2016
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/C4E0BAQF_uB4l8tuv_Q/company-logo_400_400/company-logo_400_400/0/1630567433912/yoyo_design_ltd_logo?e=1792627200&v=beta&t=lKuDp7LkXI4bpAZesniBu8Ru2TjSmFuPP9L4YSP7PHs",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQF_uB4l8tuv_Q/company-logo_400_400/company-logo_400_400/0/1630567433912/yoyo_design_ltd_logo?e=1792627200&v=beta&t=lKuDp7LkXI4bpAZesniBu8Ru2TjSmFuPP9L4YSP7PHs",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQF_uB4l8tuv_Q/company-logo_400_400-alternative/company-logo_400_400-alternative/0/1630567433945/yoyo_design_ltd_logo?e=1792627200&v=beta&t=LIV0lhaA0kStzdH1JBJSTUUdrgb3K5M37Sqakx8TTq4",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQF_uB4l8tuv_Q/company-logo_200_200/company-logo_200_200/0/1630567433912/yoyo_design_ltd_logo?e=1792627200&v=beta&t=sl4Qz_y3t54F3XdSUxFsy_lynO9JflKoh4Zd9H_s_eY",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQF_uB4l8tuv_Q/company-logo_200_200-alternative/company-logo_200_200-alternative/0/1630567433945/yoyo_design_ltd_logo?e=1792627200&v=beta&t=a4-qQc8wmPHg1AUf3ep181rUep4eeiQ-fO5mCn2Kc58",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQF_uB4l8tuv_Q/company-logo_100_100-alternative/company-logo_100_100-alternative/0/1630567433945/yoyo_design_ltd_logo?e=1792627200&v=beta&t=YJfAEcP3iMbKHMWFq3V5CeCYo4r4_CjbROJAcJsboPQ",
+              "width": 100,
+              "height": 100
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQF_uB4l8tuv_Q/company-logo_100_100/company-logo_100_100/0/1630567433912/yoyo_design_ltd_logo?e=1792627200&v=beta&t=Qccnv9Xmq5STHF-4nhMfjnN1bxc0_6c0eJmDkb7v-3I",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "position": "Head of Digital & User Experience",
+        "location": "London, United Kingdom",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "SPPLUS",
+        "companyUniversalName": null,
+        "companyLinkedinUrl": null,
+        "companyId": null,
+        "duration": "2 yrs 4 mos",
+        "description": "SPPLUS are the media owner for Experiential, building experiential as a fully integrated channel for media agencies, driving better planning, integration and value to clients, whilst building the skill set and driving organic growth for media agencies.\n\nIntegrating brands into the audiences lifestyles we create an emotional connection through live experiences, telling stories and extending the brands relationship by sharing content and spreading word of mouth.\n\n========= Role =========\n- Design & Build the company ERP system to drive maximum efficiency. From time-sheets to expenses to project management & invoicing the fully integrated bespoke system allows the team to provide a streamlined service with ease.\n- Manage UX & Backend System Developers, including hiring, team allocation, education, performance reviews.\n- Ensure all UX designs for client projects are well managed and exceed the clients brief.\n- Brand development, web site traffic growth, web site UI and advertising revenue. Developed brand strategy and statistics systems.\n- Strategic Consulting, including business plan & sales strategy development.\n- Comprehensive database management and migration from Excel to SQL.\n\n==== Brand Experience ====\nWe work with Starcom Mediavest Group, Maxus and Seven Stars running campaigns this year for: King games, Vidal Sassoon, L\u2019Oreal, Suzuki, Accenture, Europcar, Samsung, Jeep, Fosters, Asics, Cineworld, Spotify, Stubhub...",
+        "skills": null,
+        "startDate": {
+          "text": "Mar 2014",
+          "month": "Mar",
+          "year": 2014
+        },
+        "endDate": {
+          "text": "Jun 2016",
+          "month": "Jun",
+          "year": 2016
+        },
+        "companyLogo": null
+      },
+      {
+        "position": "Operations Manager",
+        "location": "London, United Kingdom",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Sense London",
+        "companyUniversalName": "sensemktg",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/sensemktg/",
+        "companyId": "633249",
+        "duration": "5 yrs 10 mos",
+        "description": "==== Brand Experience ====\nIncludes: Sky HD, SkyArts, Canon, Cobra Beer, Cadbury, Timberland...",
+        "skills": null,
+        "experienceGroupId": "aa27b15c1d37a5991d2255050c45769cef8fbf74",
+        "startDate": {
+          "text": "Jun 2008",
+          "month": "Jun",
+          "year": 2008
+        },
+        "endDate": {
+          "text": "Mar 2014",
+          "month": "Mar",
+          "year": 2014
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQGCNPcsivkRag/company-logo_400_400/B4DZ39WI8oJYAY-/0/1778071932997/sensemktg_logo?e=1792627200&v=beta&t=kgSaOUFCFtpaCcXQQ7qm64ddN04uakbPovcb0od8JE4",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQGCNPcsivkRag/company-logo_400_400/B4DZ39WI8oJYAY-/0/1778071932997/sensemktg_logo?e=1792627200&v=beta&t=kgSaOUFCFtpaCcXQQ7qm64ddN04uakbPovcb0od8JE4",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQGCNPcsivkRag/company-logo_200_200/B4DZ39WI8oJYAI-/0/1778071932997/sensemktg_logo?e=1792627200&v=beta&t=dQSTzjI2-y1JEd0BL7t3MxTR6l3dcMe_SSS3Nb9kzoc",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQGCNPcsivkRag/company-logo_100_100/B4DZ39WI8oJYAM-/0/1778071932997/sensemktg_logo?e=1792627200&v=beta&t=KOtFS2Lf28_wcsiIy5sjGKi0UAA9M_qMhqiG_Ge6FFw",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "position": "Event Manager",
+        "location": "National",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Sense London",
+        "companyUniversalName": "sensemktg",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/sensemktg/",
+        "companyId": "633249",
+        "duration": "6 mos",
+        "description": "Live Events, Experiential Marketing\n==== Brand Experience ====\nCanon, Cobra Beer, Co-Op",
+        "skills": null,
+        "experienceGroupId": "aa27b15c1d37a5991d2255050c45769cef8fbf74",
+        "startDate": {
+          "text": "May 2008",
+          "month": "May",
+          "year": 2008
+        },
+        "endDate": {
+          "text": "Oct 2008",
+          "month": "Oct",
+          "year": 2008
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQGCNPcsivkRag/company-logo_400_400/B4DZ39WI8oJYAY-/0/1778071932997/sensemktg_logo?e=1792627200&v=beta&t=kgSaOUFCFtpaCcXQQ7qm64ddN04uakbPovcb0od8JE4",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQGCNPcsivkRag/company-logo_400_400/B4DZ39WI8oJYAY-/0/1778071932997/sensemktg_logo?e=1792627200&v=beta&t=kgSaOUFCFtpaCcXQQ7qm64ddN04uakbPovcb0od8JE4",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQGCNPcsivkRag/company-logo_200_200/B4DZ39WI8oJYAI-/0/1778071932997/sensemktg_logo?e=1792627200&v=beta&t=dQSTzjI2-y1JEd0BL7t3MxTR6l3dcMe_SSS3Nb9kzoc",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQGCNPcsivkRag/company-logo_100_100/B4DZ39WI8oJYAM-/0/1778071932997/sensemktg_logo?e=1792627200&v=beta&t=KOtFS2Lf28_wcsiIy5sjGKi0UAA9M_qMhqiG_Ge6FFw",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "position": "Director",
+        "location": "Wadhurst",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Haywood Media",
+        "companyUniversalName": null,
+        "companyLinkedinUrl": null,
+        "companyId": null,
+        "duration": "7 yrs 6 mos",
+        "description": "Full service media company offering: Publishing Traditional & New Media; Events, PR, Marketing, Web Design & Hosting Solutions for any sized company.",
+        "skills": null,
+        "startDate": {
+          "text": "Oct 2006",
+          "month": "Oct",
+          "year": 2006
+        },
+        "endDate": {
+          "text": "Mar 2014",
+          "month": "Mar",
+          "year": 2014
+        },
+        "companyLogo": null
+      },
+      {
+        "position": "Operations Manager",
+        "location": "Guildford, United Kingdom",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Event Warehousing and Logistics Ltd",
+        "companyUniversalName": null,
+        "companyLinkedinUrl": null,
+        "companyId": null,
+        "duration": "2 yrs 9 mos",
+        "description": "As the Operations Manager at Sense I worked alongside Rich Adams the Operations Director in the setting up of our warehousing and logistics division in Surrey. \n\nThis included development and implementation of all process from invoicing to supply chain management, stock control, supplier acquisition and liaison as well as the daily management of our warehouse. \n\nManaging the logistics and operational elements of activity for Sense's experiential campaigns also came under my remit, including journey planning, stock delivery and storage for nationwide campaigns as well as training event managers.",
+        "skills": null,
+        "startDate": {
+          "text": "May 2009",
+          "month": "May",
+          "year": 2009
+        },
+        "endDate": {
+          "text": "Jan 2012",
+          "month": "Jan",
+          "year": 2012
+        },
+        "companyLogo": null
+      },
+      {
+        "position": "Event Manager",
+        "location": "National",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Candour Event Marketing",
+        "companyUniversalName": null,
+        "companyLinkedinUrl": null,
+        "companyId": null,
+        "duration": "3 yrs 1 mo",
+        "description": "Live Events, Experiential Marketing\n==== Brand Experience ====\nAdidas, Andrex, Army, Audi, Camelot - The Nation Lottery, Fuji, Ikea, M&S, Mars, Masterfoods, More4, National Autistic Society, Nivea, Persil, Procter & Gamble, Woodford Reserve & More.",
+        "skills": null,
+        "startDate": {
+          "text": "Jun 2005",
+          "month": "Jun",
+          "year": 2005
+        },
+        "endDate": {
+          "text": "Jun 2008",
+          "month": "Jun",
+          "year": 2008
+        },
+        "companyLogo": null
+      },
+      {
+        "position": "Primary Care Medical Representative",
+        "location": null,
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Pfizer",
+        "companyUniversalName": "pfizer",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/pfizer/",
+        "companyId": "1185",
+        "duration": "1 yr",
+        "description": "Medical Sales Representative responsible for consulting directly with general practitioners and pharmacists.",
+        "skills": null,
+        "startDate": {
+          "text": "Jun 2004",
+          "month": "Jun",
+          "year": 2004
+        },
+        "endDate": {
+          "text": "May 2005",
+          "month": "May",
+          "year": 2005
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/D4D0BAQERpLAiIJVVMw/company-logo_400_400/B4DZf1t8KvGsAY-/0/1752174150996/pfizer_logo?e=1792627200&v=beta&t=OOne17rLf9-T31oH11f5DsiE5mriDM5QcTtdgDCKuCA",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQERpLAiIJVVMw/company-logo_400_400/B4DZf1t8KvGsAY-/0/1752174150996/pfizer_logo?e=1792627200&v=beta&t=OOne17rLf9-T31oH11f5DsiE5mriDM5QcTtdgDCKuCA",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQERpLAiIJVVMw/company-logo_200_200/B4DZf1t8KvGsAI-/0/1752174150996/pfizer_logo?e=1792627200&v=beta&t=VfnEUNGsXb5GST4Y7hYS0C0Eyxs5Vb4c3ADIcs6NKnk",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4D0BAQERpLAiIJVVMw/company-logo_100_100/B4DZf1t8KvGsAQ-/0/1752174150996/pfizer_logo?e=1792627200&v=beta&t=k57k54AS7xWbQnc_O_bi4-W7Lix_-Scn0rTtXkFhZhY",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "position": "Personal Trainer",
+        "location": "Preston",
+        "employmentType": null,
+        "workplaceType": null,
+        "companyName": "Virgin Active",
+        "companyUniversalName": "virgin-active",
+        "companyLinkedinUrl": "https://www.linkedin.com/company/virgin-active/",
+        "companyId": "11563",
+        "duration": "1 yr 1 mo",
+        "description": "As a personal trainer with the Virgin, responsibilities included providing a comprehensive one-on-one educational fitness program that promotes a health and fitness through realistic goal setting and education. Produce independent exercisers by providing them in-depth information on equipment usage, lifestyle management, and ultimately, how to design their own personal fitness program.",
+        "skills": null,
+        "startDate": {
+          "text": "Nov 2002",
+          "month": "Nov",
+          "year": 2002
+        },
+        "endDate": {
+          "text": "Nov 2003",
+          "month": "Nov",
+          "year": 2003
+        },
+        "companyLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/D4E0BAQER2kJQpTcJgg/company-logo_400_400/B4EZfK9xwJHYAc-/0/1751456883097/virgin_active_logo?e=1792627200&v=beta&t=c8IhLFwqVqK6B139uWd05eHOSFW9IrVJqPyjQkcU4gc",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQER2kJQpTcJgg/company-logo_400_400/B4EZfK9xwJHYAc-/0/1751456883097/virgin_active_logo?e=1792627200&v=beta&t=c8IhLFwqVqK6B139uWd05eHOSFW9IrVJqPyjQkcU4gc",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQER2kJQpTcJgg/company-logo_200_200/B4EZfK9xwJHYAM-/0/1751456883097/virgin_active_logo?e=1792627200&v=beta&t=cOYsWjnUni71xy3pveS8poIHslwpUwDM2689i9shXUA",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D4E0BAQER2kJQpTcJgg/company-logo_100_100/B4EZfK9xwJHYAU-/0/1751456883097/virgin_active_logo?e=1792627200&v=beta&t=Lh8OrReYgBf4sw6kHpHgAWlKGo12WmrpUbUG4tX7NqI",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      }
+    ],
+    "education": [
+      {
+        "schoolName": "University of Central Lancashire",
+        "description": null,
+        "insights": "Activities and societies: Sports Council (Treasurer), Snowboard Team (Chairman), Taekwondo Team, Badminton Squad",
+        "skills": null,
+        "schoolLinkedinUrl": "https://www.linkedin.com/company/20729/",
+        "schoolId": "20729",
+        "degree": "Bachelor of Science (BSc)",
+        "fieldOfStudy": "Sports Science, Physiology, Bio Mechanics, Nutrition and Psychology",
+        "period": "1999 - 2002",
+        "startDate": {
+          "text": "1999",
+          "year": 1999
+        },
+        "endDate": {
+          "text": "2002",
+          "year": 2002
+        },
+        "schoolLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_400_400/company-logo_400_400/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=2_cRtJp3ynmEGr3fTXAfwNDZtaLrWOgAS9EXlEAQLZk",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_400_400/company-logo_400_400/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=2_cRtJp3ynmEGr3fTXAfwNDZtaLrWOgAS9EXlEAQLZk",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_200_200/company-logo_200_200/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=icLwHJpSIfJgsIqyXxcoIlandNTbeJTT4L1HOawSzpI",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_100_100/company-logo_100_100/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=iL_IJKF1kRT7ahn5ChgOptt4Uv_gY1Fz1nk9dC5euiY",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "schoolName": "General Assembly",
+        "description": "Learn the fundamentals of an object\u2010oriented programming language (Ruby).\nComplement front\u2010end skills by building functional web applications using Rails.\nImplement your web applications using database solutions.",
+        "insights": null,
+        "skills": null,
+        "schoolLinkedinUrl": "https://www.linkedin.com/company/2408664/",
+        "schoolId": "2408664",
+        "degree": "Evening Course",
+        "fieldOfStudy": "BACK-END WEB DEVELOPMENT",
+        "period": "2014 - 2015",
+        "startDate": {
+          "text": "2014",
+          "year": 2014
+        },
+        "endDate": {
+          "text": "2015",
+          "year": 2015
+        },
+        "schoolLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEwAxD22k-HBw/company-logo_400_400/company-logo_400_400/0/1630655071297/generalassembly_logo?e=1792627200&v=beta&t=DyCqvI_cP-HNKUprLrehq6ZeIKE49_aBCPJ3Qcozy60",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEwAxD22k-HBw/company-logo_400_400/company-logo_400_400/0/1630655071297/generalassembly_logo?e=1792627200&v=beta&t=DyCqvI_cP-HNKUprLrehq6ZeIKE49_aBCPJ3Qcozy60",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEwAxD22k-HBw/company-logo_200_200/company-logo_200_200/0/1630655071296/generalassembly_logo?e=1792627200&v=beta&t=mqDNVzORk1_4QI6Q4xCR1DbMwOWOfSpIPaW_hIODO2E",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEwAxD22k-HBw/company-logo_100_100/company-logo_100_100/0/1630655071297/generalassembly_logo?e=1792627200&v=beta&t=a1KxV2C24EruarBCQbWgkAcK6Bkg6xYU97tiW7PlSUE",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      },
+      {
+        "schoolName": "Mascalls",
+        "description": null,
+        "insights": null,
+        "skills": null,
+        "schoolLinkedinUrl": null,
+        "schoolId": null,
+        "degree": "A-Level",
+        "fieldOfStudy": "Physics, Chemistry, Sport Science",
+        "period": null,
+        "startDate": null,
+        "endDate": null,
+        "schoolLogo": null
+      }
+    ],
+    "certifications": [
+      {
+        "title": "CompTIA Network+ (N10-008) Cert Prep: 1 Understanding Networks",
+        "issuedBy": "LinkedIn",
+        "issuedAt": "Aug 2022",
+        "link": "https://www.linkedin.com/learning/certificates/be567467e05c5ed018bcfc5b30008107b684a95c30eb66c891b5b048c1a0555b",
+        "credentialId": null,
+        "issuedByLink": "https://www.linkedin.com/company/1337/",
+        "issuedByLogo": {
+          "url": "https://media.licdn.com/dms/image/v2/C560BAQHaVYd13rRz3A/company-logo_400_400/company-logo_400_400/0/1638831590218/linkedin_logo?e=1792627200&v=beta&t=t_Dbv02gIiwfohAnQqElNEjTF_HRkoIbi1a3rXs1YyA",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C560BAQHaVYd13rRz3A/company-logo_400_400/company-logo_400_400/0/1638831590218/linkedin_logo?e=1792627200&v=beta&t=t_Dbv02gIiwfohAnQqElNEjTF_HRkoIbi1a3rXs1YyA",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C560BAQHaVYd13rRz3A/company-logo_200_200/company-logo_200_200/0/1638831590218/linkedin_logo?e=1792627200&v=beta&t=_z47sZLAWV6ZyQRhjNT76XslsJCHvVlfkAaof4-SwOc",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C560BAQHaVYd13rRz3A/company-logo_100_100/company-logo_100_100/0/1638831590218/linkedin_logo?e=1792627200&v=beta&t=AxQ51kx83rPmAhpJyzL5s_dmnpAYGzSFVIb0uklO8XU",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        }
+      }
+    ],
+    "projects": [],
+    "volunteering": [],
+    "receivedRecommendations": [
+      {
+        "givenBy": "Case Lawrence",
+        "givenAt": "September 10, 2024",
+        "givenByLink": "https://www.linkedin.com/in/caselawrence",
+        "givenByHeadline": "Missionary | Author | Teacher | Founder |                                             Building Businesses that Bounce Back!",
+        "givenByPicture": {
+          "url": "https://media.licdn.com/dms/image/v2/D5603AQHggUUIwUI-MA/profile-displayphoto-crop_800_800/B56Z64w_SAGoAM-/0/1781216313913?e=1792627200&v=beta&t=82Z4NwjhWMZ0f1P3wPFgNSdOF60ctFcClU3SA0RENrw",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D5603AQHggUUIwUI-MA/profile-displayphoto-crop_800_800/B56Z64w_SAGoAM-/0/1781216313913?e=1792627200&v=beta&t=82Z4NwjhWMZ0f1P3wPFgNSdOF60ctFcClU3SA0RENrw",
+              "width": 800,
+              "height": 800
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D5603AQHggUUIwUI-MA/profile-displayphoto-scale_400_400/B56Z64w_SAGoAk-/0/1781216313913?e=1792627200&v=beta&t=GUEonjoBzDi3q8Sr8zjKUjByyGozVM6O-1RRwhyQXzc",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D5603AQHggUUIwUI-MA/profile-displayphoto-scale_200_200/B56Z64w_SAGoAg-/0/1781216313913?e=1792627200&v=beta&t=K5Tris88-QLO-FiV9QcfH-1RQIi4OYrZEGSrB1JFkfA",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/D5603AQHggUUIwUI-MA/profile-displayphoto-scale_100_100/B56Z64w_SAGoAc-/0/1781216313913?e=1792627200&v=beta&t=5ZG6L_3HRO73kBZpZ9SuPCUBSb9OoDZ_lpkSGdepbos",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        },
+        "description": "Richard is the rare combination of being technically and creatively brilliant; while also having uncanny sense of what consumers want. Richard has a tireless work ethic and always seems to be ahead on delivery. Most importantly, Richard is a uniquely fun colleague to work and strive with. I can't recommend Richard more highly!"
+      },
+      {
+        "givenBy": "Rich Adams",
+        "givenAt": "May 8, 2012",
+        "givenByLink": "https://www.linkedin.com/in/rich-adams-9224a728",
+        "givenByHeadline": "Head of Experiential and Event Production @ Brand Productions, Director @ AirClad X NZ",
+        "givenByPicture": {
+          "url": "https://media.licdn.com/dms/image/v2/C4D03AQFf8PV7IEoBLA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517498617802?e=1792627200&v=beta&t=fTNT_T5Cep8awciuLtf1dLWZgF9faOsYvhFG2crn_Mg",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4D03AQFf8PV7IEoBLA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1517498617802?e=1792627200&v=beta&t=fTNT_T5Cep8awciuLtf1dLWZgF9faOsYvhFG2crn_Mg",
+              "width": 179,
+              "height": 179
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4D03AQFf8PV7IEoBLA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1517498617653?e=1792627200&v=beta&t=eRjj40u_OZPL63yJQveTKJWdimptfgRsrPifTcbWI38",
+              "width": 179,
+              "height": 179
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4D03AQFf8PV7IEoBLA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517498617960?e=1792627200&v=beta&t=uIw73sthJqEsrMXD8CxWe6rxwP71j-Ww3b1C_89Uydk",
+              "width": 179,
+              "height": 179
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4D03AQFf8PV7IEoBLA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1517498617674?e=1792627200&v=beta&t=pbmd2ZQA8QOA5bY6GXw--wCiQSTs-yv2fx2Nr05l6Mc",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        },
+        "description": "I first became aware of Richard when he was event managing one of our key clients. It was in this role he showed great resourcefulness, innovation and the ability to think on his feet. It was clear that Richard was just the person i needed to bolster the Ops Team at Sense and took him on without hesitation. Richard subsequently proved himself to be a reliable and trustworthy member of the team, respected throughout the company and someone i could always count on to get the job done!"
+      },
+      {
+        "givenBy": "Sam Newman",
+        "givenAt": "March 29, 2012",
+        "givenByLink": "https://www.linkedin.com/in/sam-newman-ab878840",
+        "givenByHeadline": "Professional Actor at Dragon Personal Management",
+        "givenByPicture": {
+          "url": "https://media.licdn.com/dms/image/v2/C4D03AQGm8FeaWaN3Qw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646319787558?e=1792627200&v=beta&t=BG7YV2MjaRuqilUCI0eg1ejmQBi-ev2k7DNHO9HNvZs",
+          "sizes": [
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4D03AQGm8FeaWaN3Qw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1646319787558?e=1792627200&v=beta&t=BG7YV2MjaRuqilUCI0eg1ejmQBi-ev2k7DNHO9HNvZs",
+              "width": 800,
+              "height": 800
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4D03AQGm8FeaWaN3Qw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1646319787558?e=1792627200&v=beta&t=OTv_5hIZyRd543XPuGhNghJy4qiLscwvun3E7bVChys",
+              "width": 400,
+              "height": 400
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4D03AQGm8FeaWaN3Qw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1646319787558?e=1792627200&v=beta&t=TSJlZE87xVWccI9axrCWEUxALu4c0hPZpcfhPLN4ydk",
+              "width": 200,
+              "height": 200
+            },
+            {
+              "url": "https://media.licdn.com/dms/image/v2/C4D03AQGm8FeaWaN3Qw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1646319787558?e=1792627200&v=beta&t=jMB6TPEZltCVYnPVbAO4erFD7JRq6AgOniMjtKr_xEU",
+              "width": 100,
+              "height": 100
+            }
+          ]
+        },
+        "description": "Richard has what I would call technical genius. Excellent web developement skills and creativity, and one of the nicest people you could ever work with. Can't recommend him more."
+      }
+    ],
+    "skills": [
+      {
+        "name": "IT Infrastructure & Networking",
+        "positions": [
+          "Operations Director at Action Cam Limited"
+        ],
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Cloud Platforms (AWS & Azure)",
+        "positions": [
+          "Operations Director at Action Cam Limited"
+        ],
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Website & Domain Management",
+        "positions": [
+          "Operations Director at Action Cam Limited"
+        ],
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Security & Compliance",
+        "positions": [
+          "Operations Director at Action Cam Limited"
+        ]
+      },
+      {
+        "name": "IoT & Edge Computing",
+        "positions": [
+          "Technical Director / CTO at Action Cam Limited"
+        ]
+      },
+      {
+        "name": "Software Development (Python)",
+        "positions": [
+          "Technical Director / CTO at Action Cam Limited"
+        ]
+      },
+      {
+        "name": "Real-Time Data Pipelines & Analytics",
+        "positions": [
+          "Technical Director / CTO at Action Cam Limited"
+        ]
+      },
+      {
+        "name": "Product Innovation & Technical Leadership",
+        "positions": [
+          "Technical Director / CTO at Action Cam Limited"
+        ]
+      },
+      {
+        "name": "IoT Systems Architecture"
+      },
+      {
+        "name": "Cloud Infrastructure (AWS & Azure)"
+      },
+      {
+        "name": "AI / Machine Learning Integration"
+      },
+      {
+        "name": "Data Analytics & Power BI",
+        "positions": [
+          "Operations Director at Action Cam Limited"
+        ]
+      },
+      {
+        "name": "Leadership & Technology Strategy"
+      },
+      {
+        "name": "User Experience",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "SEO",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "User Interface Design",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Email Marketing",
+        "endorsements": "2 endorsements"
+      },
+      {
+        "name": "Experiential Marketing"
+      },
+      {
+        "name": "Web Development",
+        "positions": [
+          "Technical Director / CTO at Action Cam Limited"
+        ],
+        "endorsements": "15 endorsements"
+      },
+      {
+        "name": "Web Design",
+        "endorsements": "9 endorsements"
+      },
+      {
+        "name": "Photoshop",
+        "endorsements": "4 endorsements"
+      },
+      {
+        "name": "HTML5"
+      },
+      {
+        "name": "CSS"
+      },
+      {
+        "name": "JavaScript"
+      },
+      {
+        "name": "Event Management",
+        "endorsements": "46 endorsements"
+      },
+      {
+        "name": "Marketing",
+        "endorsements": "21 endorsements"
+      },
+      {
+        "name": "Marketing Communications",
+        "endorsements": "21 endorsements"
+      },
+      {
+        "name": "Relationship Marketing",
+        "endorsements": "12 endorsements"
+      },
+      {
+        "name": "Management",
+        "endorsements": "13 endorsements"
+      },
+      {
+        "name": "Digital Marketing",
+        "endorsements": "13 endorsements"
+      },
+      {
+        "name": "Public Relations",
+        "endorsements": "9 endorsements"
+      },
+      {
+        "name": "Integrated Marketing",
+        "endorsements": "8 endorsements"
+      },
+      {
+        "name": "Event Planning",
+        "endorsements": "8 endorsements"
+      },
+      {
+        "name": "Web Applications",
+        "endorsements": "5 endorsements"
+      },
+      {
+        "name": "Marketing Strategy",
+        "endorsements": "5 endorsements"
+      },
+      {
+        "name": "Advertising",
+        "endorsements": "4 endorsements"
+      },
+      {
+        "name": "Account Management",
+        "endorsements": "3 endorsements"
+      },
+      {
+        "name": "Corporate Events",
+        "endorsements": "2 endorsements"
+      },
+      {
+        "name": "Social Media Marketing",
+        "endorsements": "2 endorsements"
+      },
+      {
+        "name": "Event Marketing",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Electrical",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Production",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Operations",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Electricians",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Project Planning",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Sponsorship",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Brand Development",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Online Advertising",
+        "endorsements": "1 endorsement"
+      },
+      {
+        "name": "Social Media",
+        "endorsements": "2 endorsements"
+      },
+      {
+        "name": "UX"
+      }
+    ],
+    "publications": [],
+    "courses": [],
+    "patents": [],
+    "honorsAndAwards": [],
+    "languages": [],
+    "organizations": [],
+    "causes": [],
+    "featured": {
+      "images": [],
+      "link": null,
+      "title": null,
+      "subtitle": null,
+      "slides": [
+        {
+          "title": null,
+          "subtitle": null,
+          "description": null,
+          "url": "https://www.linkedin.com/feed/update/urn:li:activity:7413675723661623296?updateEntityUrn=urn%3Ali%3Afs_feedUpdate%3A%28V2%2Curn%3Ali%3Aactivity%3A7413675723661623296%29",
+          "image": {
+            "url": "https://media.licdn.com/dms/image/v2/D4E22AQGEPh0-zrHY7A/feedshare-image-high-res/B4EZuKqxuDHUAo-/0/1767558029782?e=1792627200&v=beta&t=vD5ZOorvGSMNb68YQ-kVIx6RfCTrUdDkc9teU0KaUqQ"
+          }
+        }
+      ]
+    },
+    "composeOptionType": "PREMIUM_INMAIL",
+    "moreProfiles": [
+      {
+        "id": "ACoAAA8BYqEBCGLg_vT_ca6mMEqkpp9nVffJ3hc",
+        "firstName": "Bill",
+        "lastName": "Gates",
+        "position": "Chair, Gates Foundation and Founder, Breakthrough Energy",
+        "publicIdentifier": "williamhgates",
+        "linkedinUrl": "https://www.linkedin.com/in/williamhgates"
+      },
+      {
+        "id": "ACoAAAEkwwAB9KEc2TrQgOLEQ-vzRyZeCDyc6DQ",
+        "firstName": "Satya",
+        "lastName": "Nadella",
+        "position": "Chairman and CEO at Microsoft",
+        "publicIdentifier": "satyanadella",
+        "linkedinUrl": "https://www.linkedin.com/in/satyanadella"
+      },
+      {
+        "id": "ACoAAAiQnR8Bj7ttPrS-H8IYUsLsAB2iZh1Ka0o",
+        "firstName": "Arianna",
+        "lastName": "Huffington",
+        "position": "Founder and CEO at Thrive Global | Passionate about Health and AI",
+        "publicIdentifier": "ariannahuffington",
+        "linkedinUrl": "https://www.linkedin.com/in/ariannahuffington"
+      },
+      {
+        "id": "ACoAAAFUu6sBhlQbcvAS0GdcPE344dA3vwutzVM",
+        "firstName": "Jeff",
+        "lastName": "Weiner",
+        "position": "Founding Partner Next Play Ventures; Former CEO / Executive Chairman at LinkedIn",
+        "publicIdentifier": "jeffweiner08",
+        "linkedinUrl": "https://www.linkedin.com/in/jeffweiner08"
+      },
+      {
+        "id": "ACoAAAAABL0B3SGhqeNX998wiOuk_8hYA6ojLwg",
+        "firstName": "Reid",
+        "lastName": "Hoffman",
+        "position": "Co-Founder, LinkedIn, Manas AI & Inflection AI. Founding Team, PayPal.  Author of Superagency.  Podcaster of Possible and Masters of Scale.  ",
+        "publicIdentifier": "reidhoffman",
+        "linkedinUrl": "https://www.linkedin.com/in/reidhoffman"
+      },
+      {
+        "id": "ACoAAAD4GX4BScENIji6QoTu7_m8vC9m_doapuA",
+        "firstName": "Justin",
+        "lastName": "Welsh",
+        "position": "Writer & Entrepreneur. I write The Saturday Essay for 200,000+ ambitious people living and working on their own terms.",
+        "publicIdentifier": "justinwelsh",
+        "linkedinUrl": "https://www.linkedin.com/in/justinwelsh"
+      },
+      {
+        "id": "ACoAAAACcHUBNEIuCwp2Mxjd1Uvflu_d_9Y2b4k",
+        "firstName": "Tony",
+        "lastName": "Robbins",
+        "position": "Sr. Manager, Sales Engineering at Splunk",
+        "publicIdentifier": "tonyrobbins",
+        "linkedinUrl": "https://www.linkedin.com/in/tonyrobbins"
+      },
+      {
+        "id": "ACoAAE6FVtYBAW4bP82g1IhIHxzu_1J010WU3CQ",
+        "firstName": "Sundar ",
+        "lastName": "Pichai ",
+        "position": "CEO at Google",
+        "publicIdentifier": "sundarpichai",
+        "linkedinUrl": "https://www.linkedin.com/in/sundarpichai"
+      },
+      {
+        "id": "ACoAAAUHE1IBE3DVpnF6zz3PljupLhC8chJWAXY",
+        "firstName": "Alex",
+        "lastName": "Hormozi",
+        "position": "Founder Acquisition.com, Co-Founder Skool.com. Get your free scaling roadmap\ud83d\udc47",
+        "publicIdentifier": "alexhormozi",
+        "linkedinUrl": "https://www.linkedin.com/in/alexhormozi"
+      },
+      {
+        "id": "ACoAAAA6iRMBaolUyvRZOF1IDpmNtRPh98F54l8",
+        "firstName": "Neil",
+        "lastName": "Patel",
+        "position": "Co-Founder at Neil Patel Digital",
+        "publicIdentifier": "neilkpatel",
+        "linkedinUrl": "https://www.linkedin.com/in/neilkpatel"
+      }
+    ],
+    "sectionTotals": {
+      "experience": 15,
+      "education": 3,
+      "certifications": 1,
+      "receivedRecommendations": 3,
+      "skills": 63,
+      "courses": 0,
+      "languages": 0,
+      "projects": 0,
+      "volunteering": 0,
+      "publications": 0,
+      "patents": 0,
+      "organizations": 0,
+      "honorsAndAwards": 0,
+      "causes": 0
+    },
+    "interests": [
+      {
+        "interestName": "Top Voices",
+        "elements": [
+          {
+            "title": "Steven Bartlett",
+            "subtitle": "Founder: Steven.com The Creator Economy Company, home to FlightStory & FlightCast.",
+            "link": "https://www.linkedin.com/in/stevenbartlett-123",
+            "caption": "3,241,004 followers",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/D4E03AQFOA04ym7Mcbw/profile-displayphoto-crop_800_800/B4EZvR5vDlGcAI-/0/1768753132348?e=1792627200&v=beta&t=fhijTRrWg4q3Ck2j08eWwz7oLrx-pIiUPjLE8LUodOw"
+            }
+          },
+          {
+            "title": "Ryan Holmes",
+            "subtitle": "Founder, CEO, and Board Member at Hootsuite",
+            "link": "https://www.linkedin.com/in/rholmes",
+            "caption": "1,645,945 followers",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/C5603AQGCG770nGh6tw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1642094195856?e=1792627200&v=beta&t=C-ecYfLHbYplfJds97qyyNiLQSo-DbR2JT5LP1_KrBo"
+            }
+          }
+        ]
+      },
+      {
+        "interestName": "Companies",
+        "elements": [
+          {
+            "title": "LinkedIn",
+            "subtitle": null,
+            "link": "https://www.linkedin.com/company/1337/",
+            "caption": "34,429,994 followers",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/C560BAQHaVYd13rRz3A/company-logo_400_400/company-logo_400_400/0/1638831590218/linkedin_logo?e=1792627200&v=beta&t=t_Dbv02gIiwfohAnQqElNEjTF_HRkoIbi1a3rXs1YyA"
+            }
+          },
+          {
+            "title": "Nestl\u00e9",
+            "subtitle": null,
+            "link": "https://www.linkedin.com/company/1393/",
+            "caption": "18,598,543 followers",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQGaL-YyJ8xd7Q/company-logo_400_400/company-logo_400_400/0/1630615758178/nestle_s_a__logo?e=1792627200&v=beta&t=qSHR5kCMX4DDeByHaCUPvju_xemNw9LA66dKgtqlL2A"
+            }
+          }
+        ]
+      },
+      {
+        "interestName": "Groups",
+        "elements": [
+          {
+            "title": "Digital Marketing Institute",
+            "subtitle": null,
+            "link": "https://www.linkedin.com/groups/1981102",
+            "caption": "17,983 members",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/C4E07AQGBqE9nXSoFLA/group-logo_image-shrink_400x400/group-logo_image-shrink_400x400/0/1631004896975?e=1791536400&v=beta&t=UzT2a4Jvnh8MnqI9PKRgKqnuxXTljYbdk8NcDt64PdI"
+            }
+          },
+          {
+            "title": "Raspberry Pi Learners",
+            "subtitle": null,
+            "link": "https://www.linkedin.com/groups/7032922",
+            "caption": "1,115 members",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/C4E07AQHXK0jIcaNDJA/group-logo_image-shrink_92x92/group-logo_image-shrink_92x92/0/1521151951760?e=1791536400&v=beta&t=YTJT3PiWnxgfsL2LFq_VzINMypn_5vMrcErDu_ouiP8"
+            }
+          }
+        ]
+      },
+      {
+        "interestName": "Newsletters",
+        "elements": [
+          {
+            "title": "The Akita Apex",
+            "subtitle": "Welcome to The Akita Apex. Subscribe to get access to monthly updates and industry news",
+            "link": "https://www.linkedin.com/newsletters/7155547857167536129",
+            "caption": "Published monthly",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/D4E12AQFVeKvig4VCdw/series-logo_image-shrink_300_300/series-logo_image-shrink_300_300/0/1706015547592?e=1792627200&v=beta&t=kRrvsbEv2cc3iwuxcI4bM6XhoxvjJ36YGK34v6aBEaY"
+            }
+          },
+          {
+            "title": "Experiential Insider",
+            "subtitle": "Experiential Inspiration | TRO News & Views",
+            "link": "https://www.linkedin.com/newsletters/7398727144144588801",
+            "caption": "Published monthly",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/D4E12AQEztX9c7QeMMQ/series-logo_image-shrink_300_300/B4EZq2PEAUIoAQ-/0/1763993994103?e=1792627200&v=beta&t=s_CuMrjB8o5utggMPe6P23n4uYSB-nCHDZa5NUa_sSw"
+            }
+          }
+        ]
+      },
+      {
+        "interestName": "Schools",
+        "elements": [
+          {
+            "title": "University of Lancashire",
+            "subtitle": null,
+            "link": "https://www.linkedin.com/school/20729/",
+            "caption": "161,834 followers",
+            "image": {
+              "url": "https://media.licdn.com/dms/image/v2/C4E0BAQEpYjLJop5d3g/company-logo_400_400/company-logo_400_400/0/1663750298709/university_of_central_lancashire_logo?e=1792627200&v=beta&t=2_cRtJp3ynmEGr3fTXAfwNDZtaLrWOgAS9EXlEAQLZk"
+            }
+          },
+          {
+            "title": "Squared Online",
+            "subtitle": null,
+            "link": "https://www.linkedin.com/school/3215165/",
+            "caption": "23,510 followers",
+            "image": {
+              "url": null
+            }
+          }
+        ]
+      }
+    ],
+    "originalQuery": {
+      "url": "https://www.linkedin.com/in/richardbranson"
+    }
+  }
+]
