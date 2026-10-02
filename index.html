@@ -1,60 +1,298 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agentic Dating - Compatibility Check</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0f111a;
+      color: #e2e8f0;
+    }
+    
+    /* Custom scrollbar for chat */
+    .chat-scroll::-webkit-scrollbar {
+      width: 6px;
+    }
+    .chat-scroll::-webkit-scrollbar-track {
+      background: rgba(30, 41, 59, 0.5);
+      border-radius: 8px;
+    }
+    .chat-scroll::-webkit-scrollbar-thumb {
+      background: rgba(139, 92, 246, 0.5);
+      border-radius: 8px;
+    }
+
+    .glass-card {
+      background: rgba(30, 41, 59, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #a855f7, #ec4899);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Pulsing animation for active processing */
+    @keyframes pulse-glow {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.8; transform: scale(1.05); }
+    }
+    .animate-pulse-glow {
+      animation: pulse-glow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+  </style>
 </head>
-<body>
+<body class="min-h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-800 via-gray-900 to-black text-gray-200 p-4 md:p-8 antialiased">
 
-  <h1>Agentic Dating</h1>
-  <p>Paste the LinkedIn and Instagram links for two people. Each gets an AI agent built from
-     their public profiles, the two agents go on a date, then you see the result.</p>
+  <header class="max-w-4xl mx-auto text-center mb-10 mt-6">
+    <div class="inline-block p-3 rounded-full bg-gray-800/50 border border-gray-700/50 mb-4">
+      <svg class="w-8 h-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+    </div>
+    <h1 class="text-4xl md:text-5xl font-bold tracking-tight mb-4 text-white">Agentic <span class="gradient-text">Dating</span></h1>
+    <p class="text-gray-400 max-w-2xl mx-auto text-lg">Paste the LinkedIn and Instagram links for two people. We'll build AI agents from their public profiles, send them on a simulated date, and reveal their true compatibility.</p>
+  </header>
 
-  <!-- CHANGE THIS to your deployed Render backend URL -->
-  <script>const BACKEND_URL = "https://theagenticengineer-challenge.onrender.com";</script>
+  <main class="max-w-6xl mx-auto space-y-12 pb-20">
+    
+    <section id="formSection" class="max-w-4xl mx-auto glass-card rounded-3xl p-6 md:p-10 shadow-2xl relative overflow-hidden">
+      <!-- Decorative background elements -->
+      <div class="absolute -top-24 -left-24 w-48 h-48 bg-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      <div class="absolute -bottom-24 -right-24 w-48 h-48 bg-pink-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+      
+      <form id="compatForm" class="relative z-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          
+          <!-- Person A -->
+          <div class="space-y-5">
+            <div class="flex items-center space-x-3 mb-2">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-white font-bold">A</div>
+              <h3 class="text-xl font-semibold text-white">Person A</h3>
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium text-gray-400 mb-2">LinkedIn URL</label>
+              <input type="url" id="linkedinA" required placeholder="https://linkedin.com/in/..." class="w-full bg-gray-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-400 mb-2">Instagram URL</label>
+              <input type="url" id="instagramA" required placeholder="https://instagram.com/..." class="w-full bg-gray-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all">
+            </div>
+          </div>
 
-  <form id="compatForm">
-    <h3>Person A</h3>
-    <label>LinkedIn: <input type="text" id="linkedinA" size="50" required></label><br><br>
-    <label>Instagram: <input type="text" id="instagramA" size="50" required></label><br><br>
+          <!-- Person B -->
+          <div class="space-y-5">
+            <div class="flex items-center space-x-3 mb-2">
+              <div class="w-8 h-8 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-white font-bold">B</div>
+              <h3 class="text-xl font-semibold text-white">Person B</h3>
+            </div>
+            
+            <div>
+              <label class="block text-sm font-medium text-gray-400 mb-2">LinkedIn URL</label>
+              <input type="url" id="linkedinB" required placeholder="https://linkedin.com/in/..." class="w-full bg-gray-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-400 mb-2">Instagram URL</label>
+              <input type="url" id="instagramB" required placeholder="https://instagram.com/..." class="w-full bg-gray-900/50 border border-gray-700 rounded-xl px-4 py-3 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-all">
+            </div>
+          </div>
+        </div>
 
-    <h3>Person B</h3>
-    <label>LinkedIn: <input type="text" id="linkedinB" size="50" required></label><br><br>
-    <label>Instagram: <input type="text" id="instagramB" size="50" required></label><br><br>
+        <div class="mt-10 text-center">
+          <button type="submit" id="submitBtn" class="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 text-white font-semibold py-4 px-10 rounded-full shadow-lg shadow-purple-500/30 transform transition-transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-purple-500/50 text-lg w-full md:w-auto inline-flex items-center justify-center gap-3">
+            <span>Initiate Date Simulation</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </button>
+        </div>
+      </form>
+    </section>
 
-    <button type="submit">Check compatibility</button>
-  </form>
+    <section id="statusSection" class="hidden max-w-2xl mx-auto text-center py-12">
+      <div class="inline-block relative">
+        <!-- SVG Spinner -->
+        <svg class="animate-spin w-16 h-16 text-gray-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75 fill-pink-500" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+           <svg class="w-6 h-6 text-purple-400 animate-pulse-glow" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+        </div>
+      </div>
+      <h3 id="statusText" class="mt-6 text-xl md:text-2xl font-medium text-gray-200 animate-pulse">Connecting to Agentic Engine...</h3>
+    </section>
 
-  <p id="status"></p>
+    <section id="profilesSection" class="hidden space-y-6">
+      <div class="flex items-center justify-center space-x-4 mb-8">
+        <div class="h-px bg-gray-700 flex-1"></div>
+        <h2 class="text-2xl font-semibold text-white tracking-wide">Extracted AI Personas</h2>
+        <div class="h-px bg-gray-700 flex-1"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <!-- Profile A Card -->
+        <div class="glass-card rounded-2xl overflow-hidden shadow-xl border-t-4 border-t-purple-500">
+          <div class="bg-gray-800/50 p-4 border-b border-gray-700 flex items-center space-x-3">
+             <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg">A</div>
+             <h2 class="text-xl font-medium text-white">Profile A Attributes</h2>
+          </div>
+          <div class="p-6">
+             <div id="profileAOutput" class="space-y-4 text-sm text-gray-300"></div>
+          </div>
+        </div>
 
-  <div id="profilesSection" style="display:none;">
-    <h2>Profile A</h2>
-    <pre id="profileAOutput"></pre>
+        <!-- Profile B Card -->
+        <div class="glass-card rounded-2xl overflow-hidden shadow-xl border-t-4 border-t-pink-500">
+          <div class="bg-gray-800/50 p-4 border-b border-gray-700 flex items-center space-x-3">
+             <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-white font-bold text-lg">B</div>
+             <h2 class="text-xl font-medium text-white">Profile B Attributes</h2>
+          </div>
+          <div class="p-6">
+             <div id="profileBOutput" class="space-y-4 text-sm text-gray-300"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <h2>Profile B</h2>
-    <pre id="profileBOutput"></pre>
-  </div>
+    <section id="resultSection" class="hidden space-y-6">
+      <div class="flex items-center justify-center space-x-4 mb-8 mt-16">
+        <div class="h-px bg-gray-700 flex-1"></div>
+        <h2 class="text-2xl font-semibold text-white tracking-wide text-center">Compatibility Analysis</h2>
+        <div class="h-px bg-gray-700 flex-1"></div>
+      </div>
 
-  <div id="dateSection" style="display:none;">
-    <h2>The date</h2>
-    <div id="transcriptOutput"></div>
-  </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        
+        <!-- Score Card -->
+        <div class="glass-card rounded-2xl p-8 flex flex-col items-center justify-center shadow-lg relative overflow-hidden group">
+          <div class="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-pink-600/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          <p class="text-gray-400 font-medium tracking-wider uppercase text-sm mb-4">Match Score</p>
+          <div class="relative w-40 h-40 flex items-center justify-center">
+            <svg class="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+              <path class="text-gray-700" stroke-width="3" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <path id="scorePath" class="text-pink-500" stroke-dasharray="0, 100" stroke-linecap="round" stroke-width="3" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+            </svg>
+            <div class="text-center z-10">
+              <span id="finalScoreVal" class="text-5xl font-bold text-white block">0</span>
+              <span class="text-gray-400 text-sm">/ 100</span>
+            </div>
+          </div>
+          
+          <div class="mt-6">
+            <span id="sameCityBadge" class="px-4 py-1.5 rounded-full text-xs font-semibold bg-gray-800 text-gray-300 border border-gray-600 flex items-center gap-2">
+              <svg class="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              Location Status
+            </span>
+          </div>
+        </div>
 
-  <div id="resultSection" style="display:none;">
-    <h2>Compatibility result</h2>
-    <pre id="resultOutput"></pre>
-  </div>
+        <!-- Verdicts -->
+        <div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Verdict A about B -->
+          <div class="glass-card rounded-2xl p-6 relative border-l-4 border-purple-500">
+             <div class="absolute top-4 right-4 text-gray-700 opacity-20">
+               <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+             </div>
+             <h3 class="text-purple-400 font-semibold mb-3 flex items-center gap-2">
+               <div class="w-6 h-6 rounded-full bg-purple-500 text-white flex items-center justify-center text-xs">A</div>
+               What A thought of B
+             </h3>
+             <p id="verdictAOutput" class="text-gray-300 leading-relaxed italic relative z-10"></p>
+          </div>
+
+          <!-- Verdict B about A -->
+          <div class="glass-card rounded-2xl p-6 relative border-l-4 border-pink-500">
+             <div class="absolute top-4 right-4 text-gray-700 opacity-20">
+               <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+             </div>
+             <h3 class="text-pink-400 font-semibold mb-3 flex items-center gap-2">
+               <div class="w-6 h-6 rounded-full bg-pink-500 text-white flex items-center justify-center text-xs">B</div>
+               What B thought of A
+             </h3>
+             <p id="verdictBOutput" class="text-gray-300 leading-relaxed italic relative z-10"></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="dateSection" class="hidden mt-16 max-w-4xl mx-auto">
+      <div class="flex items-center justify-center space-x-4 mb-8">
+        <div class="h-px bg-gray-700 flex-1"></div>
+        <h2 class="text-2xl font-semibold text-white tracking-wide">The Date Transcript</h2>
+        <div class="h-px bg-gray-700 flex-1"></div>
+      </div>
+
+      <div class="glass-card rounded-3xl overflow-hidden shadow-2xl flex flex-col h-[600px] border border-gray-700/60">
+        <!-- Chat Header -->
+        <div class="bg-gray-800/80 backdrop-blur px-6 py-4 border-b border-gray-700 flex justify-between items-center z-10">
+          <div class="flex items-center space-x-3">
+             <div class="flex -space-x-2">
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-purple-500 to-indigo-600 border-2 border-gray-800 flex items-center justify-center text-xs font-bold text-white z-20">A</div>
+                <div class="w-8 h-8 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 border-2 border-gray-800 flex items-center justify-center text-xs font-bold text-white z-10">B</div>
+             </div>
+             <span class="text-gray-200 font-medium">Virtual Date Simulation</span>
+          </div>
+          <span class="px-3 py-1 bg-green-500/10 text-green-400 rounded-full text-xs font-medium flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Complete
+          </span>
+        </div>
+        
+        <!-- Chat Messages -->
+        <div id="transcriptOutput" class="flex-1 overflow-y-auto p-6 space-y-6 chat-scroll bg-[#0b0e14]/50 relative">
+          <!-- Background decoration -->
+          <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiLz48L3N2Zz4=')] opacity-50 pointer-events-none"></div>
+          <!-- Messages will be injected here -->
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <script>
-    const statusEl = document.getElementById("status");
+    const BACKEND_URL = "https://theagenticengineer-challenge.onrender.com";
+    
+    // UI Elements
     const form = document.getElementById("compatForm");
+    const submitBtn = document.getElementById("submitBtn");
+    
+    const formSection = document.getElementById("formSection");
+    const statusSection = document.getElementById("statusSection");
+    const statusTextEl = document.getElementById("statusText");
+    
+    const profilesSection = document.getElementById("profilesSection");
+    const dateSection = document.getElementById("dateSection");
+    const resultSection = document.getElementById("resultSection");
 
+    // Form submission handler
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      statusEl.textContent = "Submitting...";
-      document.getElementById("profilesSection").style.display = "none";
-      document.getElementById("dateSection").style.display = "none";
-      document.getElementById("resultSection").style.display = "none";
+      
+      // Update UI for loading state
+      formSection.style.opacity = '0.5';
+      formSection.style.pointerEvents = 'none';
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `
+        <svg class="animate-spin h-5 w-5 mr-3 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+          <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+          <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+        </svg>
+        Initializing...
+      `;
+      
+      // Hide sections in case of resubmission
+      profilesSection.style.display = "none";
+      dateSection.style.display = "none";
+      resultSection.style.display = "none";
+      
+      statusSection.classList.remove('hidden');
+      statusTextEl.textContent = "Starting compatibility engine...";
 
       const body = {
         linkedin_url_a: document.getElementById("linkedinA").value,
@@ -63,72 +301,247 @@
         instagram_url_b: document.getElementById("instagramB").value,
       };
 
-      const res = await fetch(`${BACKEND_URL}/api/compatibility`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
+      try {
+        const res = await fetch(`${BACKEND_URL}/api/compatibility`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
 
-      if (!res.ok) {
-        statusEl.textContent = "Error submitting. Check the URLs are valid.";
-        return;
+        if (!res.ok) {
+          throw new Error("Invalid request");
+        }
+
+        const { job_id } = await res.json();
+        pollJob(job_id);
+      } catch (err) {
+        showError("Error submitting. Check the URLs are valid and the backend is running.");
       }
-
-      const { job_id } = await res.json();
-      pollJob(job_id);
     });
 
     async function pollJob(jobId) {
       const interval = setInterval(async () => {
-        const res = await fetch(`${BACKEND_URL}/api/jobs/${jobId}`);
-        const job = await res.json();
+        try {
+          const res = await fetch(`${BACKEND_URL}/api/jobs/${jobId}`);
+          const job = await res.json();
 
-        if (job.status === "scraping") statusEl.textContent = "Scraping both people's LinkedIn + Instagram...";
-        if (job.status === "analyzing") statusEl.textContent = "Analyzing both profiles...";
-        if (job.status === "dating") {
-          statusEl.textContent = "Profiles ready. Running the date...";
-          if (job.profile_a && job.profile_b) showProfiles(job.profile_a, job.profile_b);
-        }
+          if (job.status === "scraping") {
+            statusTextEl.textContent = "Scraping both people's LinkedIn + Instagram profiles...";
+          }
+          if (job.status === "analyzing") {
+            statusTextEl.textContent = "Synthesizing AI personas from extracted data...";
+          }
+          if (job.status === "dating") {
+            statusTextEl.textContent = "Profiles created. Simulating the virtual date...";
+            if (job.profile_a && job.profile_b && profilesSection.style.display === "none") {
+              showProfiles(job.profile_a, job.profile_b);
+            }
+          }
 
-        if (job.status === "done") {
-          clearInterval(interval);
-          statusEl.textContent = "Done!";
-          showProfiles(job.profile_a, job.profile_b);
-          showDate(job.result);
-        }
+          if (job.status === "done") {
+            clearInterval(interval);
+            
+            // Clean up status UI
+            statusSection.classList.add('hidden');
+            formSection.style.opacity = '1';
+            formSection.style.pointerEvents = 'auto';
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = `
+              <span>Run New Simulation</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+            `;
 
-        if (job.status === "error") {
-          clearInterval(interval);
-          statusEl.textContent = "Error: " + job.error;
+            showProfiles(job.profile_a, job.profile_b);
+            showDate(job.result);
+            
+            // Scroll to results
+            setTimeout(() => {
+                document.getElementById('resultSection').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 300);
+          }
+
+          if (job.status === "error") {
+            clearInterval(interval);
+            showError("Engine Error: " + (job.error || "Unknown error occurred"));
+          }
+        } catch (err) {
+            console.error("Polling error", err);
+            // Don't stop interval on a temporary network blip, but let's assume if it fails repeatedly we might want to.
+            // For now, keep it simple as requested.
         }
       }, 2000);
     }
 
+    function showError(msg) {
+      statusSection.innerHTML = `
+        <div class="inline-flex items-center space-x-3 text-red-500 bg-red-500/10 px-6 py-4 rounded-xl border border-red-500/20">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          <span class="font-medium">${msg}</span>
+        </div>
+      `;
+      formSection.style.opacity = '1';
+      formSection.style.pointerEvents = 'auto';
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = `Try Again`;
+    }
+
+    // Converts snake_case or camelCase to Title Case
+    function formatKey(key) {
+      return key
+        .replace(/_/g, ' ')
+        .replace(/([A-Z])/g, ' $1') // insert a space before all caps
+        .replace(/^./, str => str.toUpperCase()) // uppercase the first character
+        .trim();
+    }
+
+    // Recursively renders JSON object into HTML UI elements
+    function renderJsonAsUI(obj, depth = 0) {
+      if (obj === null || obj === undefined) return '<span class="text-gray-500 italic">None</span>';
+      
+      if (typeof obj === 'string' || typeof obj === 'number' || typeof obj === 'boolean') {
+        return `<span class="text-gray-200">${obj}</span>`;
+      }
+      
+      if (Array.isArray(obj)) {
+        if (obj.length === 0) return '<span class="text-gray-500 italic">Empty</span>';
+        
+        // If array of objects, render them differently or recursively
+        if (typeof obj[0] === 'object') {
+             let html = `<div class="space-y-2 mt-2 pl-3 border-l-2 border-gray-700/50">`;
+             obj.forEach((item, index) => {
+                 html += `<div class="bg-gray-800/30 p-2 rounded">${renderJsonAsUI(item, depth + 1)}</div>`;
+             });
+             html += `</div>`;
+             return html;
+        }
+
+        // Pill tags for arrays of strings/numbers
+        let html = `<div class="flex flex-wrap gap-2 mt-1.5">`;
+        obj.forEach(item => {
+          html += `<span class="bg-purple-900/40 text-purple-200 text-xs px-2.5 py-1 rounded-full border border-purple-500/20 shadow-sm">${item}</span>`;
+        });
+        html += `</div>`;
+        return html;
+      }
+      
+      if (typeof obj === 'object') {
+        let html = depth === 0 ? `<div class="space-y-4">` : `<div class="space-y-2 mt-1 w-full">`;
+        for (const [key, val] of Object.entries(obj)) {
+          html += `
+            <div class="${depth === 0 ? 'bg-gray-900/40 p-3 rounded-lg border border-gray-700/30' : ''}">
+              <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-1">${formatKey(key)}</div>
+              <div>${renderJsonAsUI(val, depth + 1)}</div>
+            </div>
+          `;
+        }
+        html += `</div>`;
+        return html;
+      }
+      
+      return '';
+    }
+
     function showProfiles(a, b) {
-      document.getElementById("profilesSection").style.display = "block";
-      document.getElementById("profileAOutput").textContent = JSON.stringify(a, null, 2);
-      document.getElementById("profileBOutput").textContent = JSON.stringify(b, null, 2);
+      profilesSection.style.display = "block";
+      document.getElementById("profileAOutput").innerHTML = renderJsonAsUI(a);
+      document.getElementById("profileBOutput").innerHTML = renderJsonAsUI(b);
     }
 
     function showDate(result) {
-      document.getElementById("dateSection").style.display = "block";
+      dateSection.style.display = "block";
       const container = document.getElementById("transcriptOutput");
       container.innerHTML = "";
-      result.transcript.forEach(line => {
-        const p = document.createElement("p");
-        p.textContent = `${line.speaker}: ${line.text}`;
-        container.appendChild(p);
-      });
+      
+      if (!result || !result.transcript) {
+          container.innerHTML = "<p class='text-gray-500 text-center italic'>No transcript available.</p>";
+      } else {
+          // Identify speakers to align bubbles left/right
+          const speakers = [];
+          result.transcript.forEach(line => {
+              if (line.speaker && !speakers.includes(line.speaker) && line.speaker.toLowerCase() !== 'system') {
+                  speakers.push(line.speaker);
+              }
+          });
+          const speakerA = speakers[0]; // will go right (purple)
+          const speakerB = speakers[1]; // will go left (pink)
 
-      document.getElementById("resultSection").style.display = "block";
-      document.getElementById("resultOutput").textContent = JSON.stringify({
-        final_score: result.final_score,
-        same_city: result.same_city,
-        verdict_a_about_b: result.verdict_a_about_b,
-        verdict_b_about_a: result.verdict_b_about_a,
-      }, null, 2);
+          result.transcript.forEach(line => {
+            const isSystem = line.speaker.toLowerCase() === 'system' || !line.speaker;
+            const isSpeakerA = line.speaker === speakerA;
+            
+            const messageDiv = document.createElement("div");
+            messageDiv.className = `flex w-full ${isSystem ? 'justify-center' : (isSpeakerA ? 'justify-end' : 'justify-start')} relative z-10`;
+            
+            if (isSystem) {
+                messageDiv.innerHTML = `
+                  <div class="bg-gray-800/80 border border-gray-700/50 text-gray-400 text-xs px-4 py-1.5 rounded-full my-2 text-center max-w-sm">
+                    ${line.text}
+                  </div>
+                `;
+            } else {
+                const bubbleColor = isSpeakerA 
+                    ? "bg-gradient-to-br from-purple-600 to-indigo-600 rounded-br-sm" 
+                    : "bg-gradient-to-br from-gray-700 to-gray-800 rounded-bl-sm border border-gray-600/50";
+                const textColor = isSpeakerA ? "text-white" : "text-gray-200";
+                const initial = line.speaker ? line.speaker.charAt(0).toUpperCase() : '?';
+                const avatarBg = isSpeakerA ? "bg-purple-900 text-purple-300" : "bg-gray-700 text-gray-300";
+
+                // Layout depends on alignment
+                const avatarHTML = `<div class="flex-shrink-0 w-8 h-8 rounded-full ${avatarBg} flex items-center justify-center text-xs font-bold mt-auto mb-1 mx-2 shadow-md">${initial}</div>`;
+                
+                messageDiv.innerHTML = `
+                  <div class="flex max-w-[85%] ${isSpeakerA ? 'flex-row-reverse' : 'flex-row'} items-end">
+                    ${avatarHTML}
+                    <div class="flex flex-col ${isSpeakerA ? 'items-end' : 'items-start'}">
+                       <span class="text-[10px] text-gray-500 mb-1 mx-1">${line.speaker}</span>
+                       <div class="${bubbleColor} ${textColor} px-4 py-3 rounded-2xl shadow-lg leading-relaxed text-sm">
+                         ${line.text}
+                       </div>
+                    </div>
+                  </div>
+                `;
+            }
+            container.appendChild(messageDiv);
+          });
+      }
+
+      // Show Results
+      resultSection.style.display = "block";
+      
+      // Score and Progress bar logic
+      const score = parseInt(result.final_score) || 0;
+      document.getElementById("finalScoreVal").textContent = score;
+      
+      // Circle Math: SVG dasharray is usually Circumference. 
+      // r=15.9155 makes C = 100.
+      const circlePath = document.getElementById("scorePath");
+      // Stroke dasharray format: "filled, empty". e.g., "75, 100" fills 75%.
+      setTimeout(() => {
+          circlePath.style.transition = 'stroke-dasharray 1.5s ease-out';
+          circlePath.setAttribute('stroke-dasharray', `${score}, 100`);
+          
+          // Color based on score
+          if (score < 40) circlePath.classList.replace('text-pink-500', 'text-red-500');
+          else if (score > 75) circlePath.classList.replace('text-pink-500', 'text-green-500');
+          else circlePath.classList.replace('text-pink-500', 'text-yellow-400');
+      }, 100);
+      
+      // Same City Badge
+      const cityBadge = document.getElementById("sameCityBadge");
+      if (result.same_city) {
+          cityBadge.innerHTML = `<svg class="w-4 h-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Same City`;
+          cityBadge.classList.add("border-green-500/30", "bg-green-500/10", "text-green-300");
+          cityBadge.classList.remove("bg-gray-800", "text-gray-300");
+      } else {
+          cityBadge.innerHTML = `<svg class="w-4 h-4 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg> Long Distance`;
+          cityBadge.classList.add("border-yellow-500/30", "bg-yellow-500/10", "text-yellow-300");
+          cityBadge.classList.remove("bg-gray-800", "text-gray-300");
+      }
+
+      // Verdicts
+      document.getElementById("verdictAOutput").textContent = result.verdict_a_about_b || "No verdict provided.";
+      document.getElementById("verdictBOutput").textContent = result.verdict_b_about_a || "No verdict provided.";
     }
   </script>
-
 </body>
 </html>
