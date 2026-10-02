@@ -136,7 +136,7 @@ PERSON A: {profile_a}
 PERSON B: {profile_b}
 
 Exactly 6 lines, alternating, starting with A. 1-3 sentences each, true to tone/interests.
-Output ONLY: {{"transcript": [{{"speaker":"A","text":"..."}}, ...]}}
+Output ONLY valid JSON in exactly this shape: {{"transcript": [{{"speaker":"A","text":"..."}}, ...]}}
 """
 
 VERDICT_PROMPT = """Two people went on a first date based on their real profiles. Evaluate

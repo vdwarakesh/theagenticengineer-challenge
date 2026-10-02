@@ -1,48 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Agentic Dating - Compatibility Check</title>
+  
+  <!-- Inter Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Custom Configuration & Styles -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+          },
+          colors: {
+            brand: {
+              dark: '#0a0a0f',
+              card: 'rgba(255, 255, 255, 0.03)',
+              border: 'rgba(255, 255, 255, 0.08)',
+            }
+          },
+          animation: {
+            'gradient-x': 'gradient-x 15s ease infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            'gradient-x': {
+              '0%, 100%': {
+                'background-size': '200% 200%',
+                'background-position': 'left center'
+              },
+              '50%': {
+                'background-size': '200% 200%',
+                'background-position': 'right center'
+              },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <style>
+    /* Custom Scrollbar for JSON outputs */
+    pre::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    pre::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+    pre::-webkit-scrollbar-thumb {
+      background: rgba(236, 72, 153, 0.3);
+      border-radius: 4px;
+    }
+    pre::-webkit-scrollbar-thumb:hover {
+      background: rgba(236, 72, 153, 0.6);
+    }
+    
+    /* Neon Glow Effects */
+    .neon-shadow {
+      box-shadow: 0 0 20px rgba(217, 70, 239, 0.15), 0 0 40px rgba(236, 72, 153, 0.1);
+    }
+    
+    body {
+      background-color: #0a0a0f;
+      color: #e2e8f0;
+    }
+  </style>
 </head>
-<body>
+<body class="min-h-screen relative overflow-x-hidden selection:bg-pink-500 selection:text-white">
 
-  <h1>Agentic Dating</h1>
-  <p>Paste the LinkedIn and Instagram links for two people. Each gets an AI agent built from
-     their public profiles, the two agents go on a date, then you see the result.</p>
-
-  <!-- CHANGE THIS to your deployed Render backend URL -->
-  <script>const BACKEND_URL = "https://theagenticengineer-challenge.onrender.com";</script>
-
-  <form id="compatForm">
-    <h3>Person A</h3>
-    <label>LinkedIn: <input type="text" id="linkedinA" size="50" required></label><br><br>
-    <label>Instagram: <input type="text" id="instagramA" size="50" required></label><br><br>
-
-    <h3>Person B</h3>
-    <label>LinkedIn: <input type="text" id="linkedinB" size="50" required></label><br><br>
-    <label>Instagram: <input type="text" id="instagramB" size="50" required></label><br><br>
-
-    <button type="submit">Check compatibility</button>
-  </form>
-
-  <p id="status"></p>
-
-  <div id="profilesSection" style="display:none;">
-    <h2>Profile A</h2>
-    <pre id="profileAOutput"></pre>
-
-    <h2>Profile B</h2>
-    <pre id="profileBOutput"></pre>
+  <!-- Background Ambient Gradients -->
+  <div class="fixed top-0 left-0 w-full h-full overflow-hidden -z-10 pointer-events-none">
+    <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-pink-600/20 rounded-full blur-[120px] animate-pulse-slow"></div>
+    <div class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-purple-700/20 rounded-full blur-[120px] animate-pulse-slow" style="animation-delay: 1s;"></div>
   </div>
 
-  <div id="dateSection" style="display:none;">
-    <h2>The date</h2>
-    <div id="transcriptOutput"></div>
-  </div>
+  <div class="max-w-5xl mx-auto px-4 py-12 md:py-20">
+    
+    <!-- Header -->
+    <header class="text-center mb-12">
+      <div class="inline-block mb-4 p-1 rounded-full bg-gradient-to-r from-pink-500/20 to-purple-600/20 border border-white/10 backdrop-blur-md">
+        <span class="px-4 py-1.5 rounded-full bg-brand-dark/50 text-xs font-semibold tracking-wider text-pink-300 uppercase">AI Matchmaking</span>
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-indigo-400 animate-gradient-x">
+          Agentic Dating
+        </span>
+      </h1>
+      <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">
+        Paste the LinkedIn and Instagram links for two people. Each gets an AI agent built from their public profiles, the two agents go on a date, then you see the result.
+      </p>
+    </header>
 
-  <div id="resultSection" style="display:none;">
-    <h2>Compatibility result</h2>
-    <pre id="resultOutput"></pre>
+    <!-- CHANGE THIS to your deployed Render backend URL -->
+    <script>const BACKEND_URL = "https://theagenticengineer-challenge.onrender.com";</script>
+
+    <!-- Form Section -->
+    <form id="compatForm" class="mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+        
+        <!-- Person A Card -->
+        <div class="bg-brand-card backdrop-blur-xl border border-brand-border rounded-2xl p-6 md:p-8 neon-shadow transition-all duration-300 hover:border-pink-500/30">
+          <div class="flex items-center mb-6">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center text-white font-bold text-xl mr-4 shadow-lg shadow-pink-500/30">A</div>
+            <h3 class="text-2xl font-semibold text-white">Person A</h3>
+          </div>
+          
+          <div class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">LinkedIn URL</label>
+              <input type="url" id="linkedinA" required placeholder="https://linkedin.com/in/..." 
+                     class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Instagram URL</label>
+              <input type="url" id="instagramA" required placeholder="https://instagram.com/..." 
+                     class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-pink-500/50 focus:border-pink-500 transition-all">
+            </div>
+          </div>
+        </div>
+
+        <!-- Person B Card -->
+        <div class="bg-brand-card backdrop-blur-xl border border-brand-border rounded-2xl p-6 md:p-8 neon-shadow transition-all duration-300 hover:border-purple-500/30">
+          <div class="flex items-center mb-6">
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 to-indigo-500 flex items-center justify-center text-white font-bold text-xl mr-4 shadow-lg shadow-purple-500/30">B</div>
+            <h3 class="text-2xl font-semibold text-white">Person B</h3>
+          </div>
+          
+          <div class="space-y-5">
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">LinkedIn URL</label>
+              <input type="url" id="linkedinB" required placeholder="https://linkedin.com/in/..." 
+                     class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all">
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Instagram URL</label>
+              <input type="url" id="instagramB" required placeholder="https://instagram.com/..." 
+                     class="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-purple-500 transition-all">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="flex justify-center">
+        <button type="submit" class="group relative px-8 py-4 bg-gradient-to-r from-pink-600 to-purple-600 rounded-full font-semibold text-lg text-white transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(217,70,239,0.4)] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-[#0a0a0f]">
+          <span class="flex items-center gap-2">
+            <svg class="w-5 h-5 group-hover:animate-spin" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            Check Compatibility
+          </span>
+        </button>
+      </div>
+    </form>
+
+    <!-- Status Indicator -->
+    <div class="flex justify-center mb-10">
+      <p id="status" class="text-center font-medium text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-400 empty:hidden py-2 px-6 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm"></p>
+    </div>
+
+    <!-- Profiles Section -->
+    <div id="profilesSection" style="display:none;" class="mb-12 animate-[fadeIn_0.5s_ease-out]">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
+        <h2 class="text-2xl font-bold text-white text-center">Extracted Profiles</h2>
+        <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <div class="bg-black/60 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-md flex flex-col">
+          <div class="bg-white/5 px-4 py-3 border-b border-white/10 flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-pink-500"></div>
+            <h3 class="font-mono text-sm text-gray-300">Profile_A.json</h3>
+          </div>
+          <pre id="profileAOutput" class="p-4 text-xs md:text-sm font-mono text-pink-100/80 overflow-x-auto max-h-96"></pre>
+        </div>
+
+        <div class="bg-black/60 border border-white/10 rounded-2xl overflow-hidden backdrop-blur-md flex flex-col">
+          <div class="bg-white/5 px-4 py-3 border-b border-white/10 flex items-center gap-2">
+            <div class="w-3 h-3 rounded-full bg-purple-500"></div>
+            <h3 class="font-mono text-sm text-gray-300">Profile_B.json</h3>
+          </div>
+          <pre id="profileBOutput" class="p-4 text-xs md:text-sm font-mono text-purple-100/80 overflow-x-auto max-h-96"></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Date Transcript Section -->
+    <div id="dateSection" style="display:none;" class="mb-12 animate-[fadeIn_0.5s_ease-out]">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
+        <h2 class="text-2xl md:text-3xl font-bold text-white text-center flex items-center gap-3">
+          <span>🍷</span> The Date
+        </h2>
+        <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
+      </div>
+      
+      <div class="bg-black/40 backdrop-blur-xl border border-white/10 rounded-3xl p-4 md:p-8 neon-shadow max-w-4xl mx-auto">
+        <!-- The transcript gets injected here -->
+        <div id="transcriptOutput" class="flex flex-col space-y-4 max-h-[600px] overflow-y-auto pr-2 pb-4"></div>
+      </div>
+    </div>
+
+    <!-- Compatibility Result Section -->
+    <div id="resultSection" style="display:none;" class="mb-20 animate-[fadeIn_0.5s_ease-out]">
+      <div class="flex items-center gap-4 mb-6">
+        <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
+        <h2 class="text-2xl font-bold text-white text-center">Compatibility Verdict</h2>
+        <div class="h-px bg-gradient-to-r from-transparent via-white/20 to-transparent flex-1"></div>
+      </div>
+      
+      <div class="bg-gradient-to-br from-brand-card to-black/60 border border-white/20 rounded-2xl overflow-hidden backdrop-blur-xl max-w-2xl mx-auto shadow-2xl">
+        <div class="bg-gradient-to-r from-pink-500/20 to-purple-600/20 px-6 py-4 border-b border-white/10">
+          <h3 class="font-mono text-sm text-gray-200 text-center uppercase tracking-widest">Final Analysis</h3>
+        </div>
+        <pre id="resultOutput" class="p-6 text-sm md:text-base font-mono text-green-300 overflow-x-auto whitespace-pre-wrap"></pre>
+      </div>
+    </div>
+
   </div>
 
   <script>
@@ -51,7 +237,9 @@
 
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      statusEl.textContent = "Submitting...";
+      statusEl.textContent = "Initiating matching sequence...";
+      statusEl.classList.add("animate-pulse"); // Add a subtle pulse effect while working
+      
       document.getElementById("profilesSection").style.display = "none";
       document.getElementById("dateSection").style.display = "none";
       document.getElementById("resultSection").style.display = "none";
@@ -63,43 +251,55 @@
         instagram_url_b: document.getElementById("instagramB").value,
       };
 
-      const res = await fetch(`${BACKEND_URL}/api/compatibility`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
+      try {
+        const res = await fetch(`${BACKEND_URL}/api/compatibility`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(body),
+        });
 
-      if (!res.ok) {
-        statusEl.textContent = "Error submitting. Check the URLs are valid.";
-        return;
+        if (!res.ok) {
+          statusEl.textContent = "Error submitting. Check the URLs are valid.";
+          statusEl.classList.remove("animate-pulse");
+          return;
+        }
+
+        const { job_id } = await res.json();
+        pollJob(job_id);
+      } catch (err) {
+        statusEl.textContent = "Network error. Make sure the backend is running.";
+        statusEl.classList.remove("animate-pulse");
       }
-
-      const { job_id } = await res.json();
-      pollJob(job_id);
     });
 
     async function pollJob(jobId) {
       const interval = setInterval(async () => {
-        const res = await fetch(`${BACKEND_URL}/api/jobs/${jobId}`);
-        const job = await res.json();
+        try {
+          const res = await fetch(`${BACKEND_URL}/api/jobs/${jobId}`);
+          const job = await res.json();
 
-        if (job.status === "scraping") statusEl.textContent = "Scraping both people's LinkedIn + Instagram...";
-        if (job.status === "analyzing") statusEl.textContent = "Analyzing both profiles...";
-        if (job.status === "dating") {
-          statusEl.textContent = "Profiles ready. Running the date...";
-          if (job.profile_a && job.profile_b) showProfiles(job.profile_a, job.profile_b);
-        }
+          if (job.status === "scraping") statusEl.textContent = "Scraping digital footprints (LinkedIn + Instagram)...";
+          if (job.status === "analyzing") statusEl.textContent = "Synthesizing AI personas from profile data...";
+          if (job.status === "dating") {
+            statusEl.textContent = "Personas constructed. The date is happening right now...";
+            if (job.profile_a && job.profile_b) showProfiles(job.profile_a, job.profile_b);
+          }
 
-        if (job.status === "done") {
-          clearInterval(interval);
-          statusEl.textContent = "Done!";
-          showProfiles(job.profile_a, job.profile_b);
-          showDate(job.result);
-        }
+          if (job.status === "done") {
+            clearInterval(interval);
+            statusEl.textContent = "Match analysis complete!";
+            statusEl.classList.remove("animate-pulse");
+            showProfiles(job.profile_a, job.profile_b);
+            showDate(job.result);
+          }
 
-        if (job.status === "error") {
-          clearInterval(interval);
-          statusEl.textContent = "Error: " + job.error;
+          if (job.status === "error") {
+            clearInterval(interval);
+            statusEl.textContent = "Error during execution: " + job.error;
+            statusEl.classList.remove("animate-pulse");
+          }
+        } catch(err) {
+          // Silent catch for polling temporary network hiccups
         }
       }, 2000);
     }
@@ -114,11 +314,50 @@
       document.getElementById("dateSection").style.display = "block";
       const container = document.getElementById("transcriptOutput");
       container.innerHTML = "";
-      result.transcript.forEach(line => {
-        const p = document.createElement("p");
-        p.textContent = `${line.speaker}: ${line.text}`;
-        container.appendChild(p);
+      
+      // Variable to keep track of speaker alternating for UI layout
+      let previousSpeaker = null;
+      let isLeftAlignment = true; // A = left, B = right layout logic
+
+      result.transcript.forEach((line) => {
+        // Detect speaker changes to alternate left/right bubble alignments
+        if (previousSpeaker !== line.speaker) {
+          if (previousSpeaker !== null) {
+            isLeftAlignment = !isLeftAlignment;
+          }
+          previousSpeaker = line.speaker;
+        }
+
+        // Creating the container for alignment
+        const wrapper = document.createElement("div");
+        wrapper.className = `flex w-full ${isLeftAlignment ? 'justify-start' : 'justify-end'}`;
+
+        // Creating the chat bubble
+        const bubble = document.createElement("div");
+        bubble.className = `max-w-[85%] md:max-w-[70%] px-5 py-3 rounded-2xl shadow-lg relative ${
+          isLeftAlignment
+            ? 'bg-gradient-to-br from-pink-600 to-rose-500 text-white rounded-tl-sm shadow-pink-500/20'
+            : 'bg-white/10 backdrop-blur-md text-gray-100 rounded-tr-sm border border-white/10 shadow-purple-500/10'
+        }`;
+        
+        // Formulate internal HTML keeping identical textual output context
+        bubble.innerHTML = `
+          <div class="text-[11px] uppercase tracking-wider font-bold mb-1 opacity-70">
+            ${line.speaker}
+          </div>
+          <div class="text-sm md:text-base leading-relaxed">
+            ${line.text}
+          </div>
+        `;
+        
+        wrapper.appendChild(bubble);
+        container.appendChild(wrapper);
       });
+
+      // Auto-scroll to bottom of the chat smoothly
+      setTimeout(() => {
+        container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+      }, 100);
 
       document.getElementById("resultSection").style.display = "block";
       document.getElementById("resultOutput").textContent = JSON.stringify({
@@ -130,5 +369,12 @@
     }
   </script>
 
+  <style>
+    /* Simple fade in animation for sections */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </body>
 </html>
